@@ -1,0 +1,154 @@
+[
+  {
+    "id": "linear",
+    "filename": "프로그래밍Ⅰ - [02] 선형 구조의 탐색.pdf",
+    "pages": 11,
+    "sha256": "f75494b420e3c57caa0e64322d49e35a15baf2fe9381823938f4b06310c57e04",
+    "path": "sources/linear.pdf",
+    "area": "탐색 기반",
+    "title": "02 선형 구조의 탐색",
+    "scope": "선택·퀵 정렬 / 선형 구조 / 순차·이분 탐색 / 경계 탐색 / STL sort",
+    "inspection": "전체 페이지 텍스트 추출 및 렌더링 대조 완료",
+    "notes": [
+      "err-3"
+    ]
+  },
+  {
+    "id": "graph",
+    "filename": "프로그래밍Ⅰ - [03] 비선형 구조의 탐색(1).pdf",
+    "pages": 17,
+    "sha256": "f1d6857e1cf8ab93016714b2c8f62321601aad24e85c0deb8c0b08a6a82014ab",
+    "path": "sources/graph.pdf",
+    "area": "탐색 기반",
+    "title": "03 비선형 구조의 탐색(1)",
+    "scope": "그래프·트리 / 인접행렬·인접리스트 / vector",
+    "inspection": "전체 페이지 텍스트 추출 및 렌더링 대조 완료",
+    "notes": [
+      "err-12"
+    ]
+  },
+  {
+    "id": "dfs",
+    "filename": "프로그래밍Ⅰ - [03] 비선형 구조의 탐색(2).pdf",
+    "pages": 11,
+    "sha256": "20f0051af5049d763d25b7ae61f57ae14771f4520569aff3e647cb12df0a25b1",
+    "path": "sources/dfs.pdf",
+    "area": "탐색 기반",
+    "title": "03 비선형 구조의 탐색(2)",
+    "scope": "DFS 재귀·스택 / BFS 큐 / 방문 표시",
+    "inspection": "전체 페이지 텍스트 추출 및 렌더링 대조 완료",
+    "notes": []
+  },
+  {
+    "id": "bfs",
+    "filename": "프로그래밍Ⅰ - [03] 비선형 구조의 탐색(3).pdf",
+    "pages": 14,
+    "sha256": "cfec6bae144b7f5384db7ff0fd8d1bd55eda34eeca8a0b616712dd8bf99e1b61",
+    "path": "sources/bfs.pdf",
+    "area": "탐색 기반",
+    "title": "03 비선형 구조의 탐색(3)",
+    "scope": "문제: 두더지 굴(S) / 4방향 연결 요소 / 크기 내림차순",
+    "inspection": "전체 페이지 텍스트 추출 및 렌더링 대조 완료",
+    "notes": []
+  },
+  {
+    "id": "relation-1",
+    "filename": "chap1.pdf",
+    "pages": 19,
+    "sha256": "3a8c82650b199c0fe7d9965ffe6495809cb3d0ce7479e99cc3690333d6d6f8a0",
+    "path": "sources/relation-1.pdf",
+    "area": "관계 기반",
+    "title": "chap1 · 수학적 귀납법과 점화식",
+    "scope": "탐색·관계 기반 비교 / 실행시간 / 합 / 진법 변환 / 숫자 뒤집기",
+    "inspection": "전체 페이지 텍스트 추출 및 렌더링 대조 완료",
+    "notes": [
+      "err-4"
+    ]
+  },
+  {
+    "id": "relation-2",
+    "filename": "chap2.pdf",
+    "pages": 11,
+    "sha256": "49b4d04c62714cf04face1b9f9903cce30aba19654c9fb4354534f50e8b54e3d",
+    "path": "sources/relation-2.pdf",
+    "area": "관계 기반",
+    "title": "chap2 · 수학적 귀납법과 점화식",
+    "scope": "문제1 숫자 뒤집기(S) / 오류 수정 / 문제2 별 그리기",
+    "inspection": "전체 페이지 텍스트 추출 및 렌더링 대조 완료",
+    "notes": [
+      "err-5"
+    ]
+  },
+  {
+    "id": "relation-3",
+    "filename": "chap3.pdf",
+    "pages": 13,
+    "sha256": "92ed9f0cce6c4fe3866b995e04e0643189dc15e9664044697ff9e742b3687fca",
+    "path": "sources/relation-3.pdf",
+    "area": "관계 기반",
+    "title": "chap3 · 수학적 귀납법과 점화식",
+    "scope": "문제3 Combination(S) / 오버플로 / 문제4 타일 채우기",
+    "inspection": "전체 페이지 텍스트 추출 및 렌더링 대조 완료",
+    "notes": [
+      "err-6"
+    ]
+  },
+  {
+    "id": "relation-4",
+    "filename": "chap4.pdf",
+    "pages": 14,
+    "sha256": "7638cd3b75b71dd502396f7e60b98ac9fce0151a893683aa3b124856d424cc88",
+    "path": "sources/relation-4.pdf",
+    "area": "관계 기반",
+    "title": "chap4 · 분할 정복",
+    "scope": "문제5 Distance of Nodes / 문제6 영역 구분 / 문제7 이진 암호 / 문제8 이진 복원",
+    "inspection": "전체 페이지 텍스트 추출 및 렌더링 대조 완료",
+    "notes": [
+      "err-7",
+      "err-8",
+      "err-9"
+    ]
+  },
+  {
+    "id": "relation-5",
+    "filename": "chap5.pdf",
+    "pages": 18,
+    "sha256": "ef7042d78bc2e8bc4705b6bd4783a4c33a6bbac182b67e4400e487b28ca520eb",
+    "path": "sources/relation-5.pdf",
+    "area": "관계 기반",
+    "title": "chap5 · 동적표를 이용한 알고리즘 설계",
+    "scope": "문제9 분할 수 / 동적표 / 피보나치 / 문제1 숫자 뒤집기(L) / 문제2 Combination(L)",
+    "inspection": "전체 페이지 텍스트 추출 및 렌더링 대조 완료",
+    "notes": [
+      "err-10",
+      "err-11"
+    ]
+  },
+  {
+    "id": "relation-6",
+    "filename": "chap6.pdf",
+    "pages": 7,
+    "sha256": "3552ef2534a63683c0d21a17c7b406e05f14060290eb921328d672daa06b5e1c",
+    "path": "sources/relation-6.pdf",
+    "area": "관계 기반",
+    "title": "chap6 · 동적표를 이용한 알고리즘 설계",
+    "scope": "문제3 숙직 선생님 / 문제4 광석 수집",
+    "inspection": "전체 페이지 텍스트 추출 및 렌더링 대조 완료",
+    "notes": []
+  },
+  {
+    "id": "reference",
+    "filename": "프로그래밍Ⅰ - 참고자료(sasapro.enn.kr).pdf",
+    "pages": 10,
+    "sha256": "e449b9f7fc29c06ed762d63d74866d8ed323974d37a3dc0f57c8f7593ebf491c",
+    "path": "sources/reference.pdf",
+    "area": "참고자료",
+    "title": "프로그래밍Ⅰ 참고자료",
+    "scope": "주소 / STL 정렬·경계 탐색 / 스택·큐 / 미로의 그래프화 / 입력 순서 탐색",
+    "inspection": "전체 페이지 텍스트 추출 및 렌더링 대조 완료",
+    "notes": [
+      "err-1",
+      "err-2"
+    ]
+  }
+]

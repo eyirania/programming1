@@ -1,0 +1,18 @@
+import {describe,it,expect} from 'vitest';
+import {createHash} from 'node:crypto';
+import {readFileSync} from 'node:fs';
+import {concepts,cards,questions,sources,patterns,examPresets} from '../src/content';
+import audit from '../src/content/page-audit.json';
+import teacher from '../src/content/teacher-code.json';
+import katex from 'katex';
+import formulas from '../src/content/formulas.json';
+describe('source and question integrity',()=>{
+ it('accounts for every source page and exact original PDF',()=>{expect(sources).toHaveLength(11);expect(sources.reduce((n,s)=>n+s.pages,0)).toBe(145);expect(audit).toHaveLength(145);for(const s of sources){expect(createHash('sha256').update(readFileSync('public/'+s.path)).digest('hex')).toBe(s.sha256);}});
+ it('all published items have real source pages and all question hashes match',()=>{const sm=Object.fromEntries(sources.map(s=>[s.id,s]));for(const x of [...concepts,...cards,...questions]){expect(x.sources.length).toBeGreaterThan(0);for(const ref of x.sources){expect(sm[ref.sourceId]).toBeDefined();expect(ref.page).toBeGreaterThan(0);expect(ref.page).toBeLessThanOrEqual(sm[ref.sourceId].pages);}}for(const q of questions){expect(q.verification.status).toBe('passed');expect((q.verification as Record<string,unknown>).contentSha256).toBe(createHash('sha256').update(q.prompt+q.code+q.answer).digest('hex'));if(q.grading==='rubric')expect(q.rubric.length).toBeGreaterThanOrEqual(3);for(const id of q.conceptIds)expect(concepts.some(c=>c.id===id)).toBe(true);}});
+ it('coverage and identity are consistent',()=>{expect(concepts).toHaveLength(66);expect(cards).toHaveLength(156);expect(questions).toHaveLength(150);expect(new Set(questions.map(q=>q.id)).size).toBe(150);expect(new Set(questions.map(q=>q.type)).size).toBe(8);expect(new Set(cards.map(c=>c.type)).size).toBe(5);for(const c of concepts){expect(cards.some(card=>card.id===c.id+'-definition')).toBe(true);for(const id of c.related)expect(concepts.some(c=>c.id===id)).toBe(true);}});
+ it('presets have 20 unique questions and displayed patterns are executed programs',()=>{for(const e of examPresets){const pool=questions.filter(q=>e.questionIds.includes(q.id));expect(new Set(pool.map(q=>q.level)).size).toBe(5);expect(new Set(pool.map(q=>q.unitId)).size).toBeGreaterThanOrEqual(8);}const ids=examPresets.flatMap(e=>e.questionIds);expect(ids.length).toBe(60);expect(new Set(ids).size).toBe(60);for(const id of ids)expect(questions.some(q=>q.id===id)).toBe(true);for(const p of patterns){const q=questions.find(q=>q.id===p.questionId)!;expect(p.code).toBe(q.code);expect(q.verification.status).toBe('passed');}});
+ it('mathematical notation parses successfully',()=>{for(const [id,f] of Object.entries(formulas)){expect(concepts.some(c=>c.id===id)).toBe(true);expect(()=>katex.renderToString(f,{throwOnError:true})).not.toThrow();}});
+ it('uses only C I/O and the STL headers grounded in class material',()=>{for(const q of questions.filter(q=>q.code)){expect(q.code).toContain('#include <stdio.h>');expect(q.code).not.toMatch(/\b(cout|cin|auto|string)\b|#include <iostream>|\[\]\s*\(int/);const headers=[...q.code.matchAll(/#include <([^>]+)>/g)].map(m=>m[1]);expect(headers.every(h=>['stdio.h','algorithm','stack','queue','vector'].includes(h))).toBe(true);if(q.language==='c')expect(headers).toEqual(['stdio.h']);}});
+ it('keeps the teacher original unchanged and attaches real source lines',()=>{expect(createHash('sha256').update(readFileSync('public/'+teacher.path)).digest('hex')).toBe(teacher.sha256);expect(teacher.sections).toHaveLength(3);for(const q of questions.filter(q=>q.codeSource)){expect(q.codeSource!.lineStart).toBe(54);expect(q.codeSource!.lineEnd).toBeLessThanOrEqual(teacher.lines);}});
+
+});

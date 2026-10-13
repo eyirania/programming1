@@ -1,0 +1,17 @@
+{
+  "pdfAssets": 11,
+  "htmlAssets": [
+    "./favicon.svg",
+    "./assets/index-CHl_i_D0.js",
+    "./assets/react-tGdWEhNg.js",
+    "./assets/motion-CommoC-r.js",
+    "./assets/storage-C6vvqHl_.js",
+    "./assets/content-BVeOsKWj.js",
+    "./assets/highlight-D7w6HFRG.js",
+    "./assets/math-DoVwwo-V.js",
+    "./assets/index-6z21hXcB.css"
+  ],
+  "allExist": true,
+  "routing": "HashRouter",
+  "base": "./"
+}

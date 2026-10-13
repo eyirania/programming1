@@ -1,0 +1,1452 @@
+[
+  {
+    "sourceId": "linear",
+    "page": 1,
+    "topic": "선택 정렬 전체 추적 그림",
+    "textChars": 179,
+    "embeddedImages": 7,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "linear",
+    "page": 2,
+    "topic": "퀵 정렬 partition 추적 그림",
+    "textChars": 275,
+    "embeddedImages": 7,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "linear",
+    "page": 3,
+    "topic": "02 선형 구조의 탐색 표지",
+    "textChars": 30,
+    "embeddedImages": 3,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "이미지 수식·그림을 원본 렌더링과 대조. 빈 표·빈 페이지는 내용 미생성."
+  },
+  {
+    "sourceId": "linear",
+    "page": 4,
+    "topic": "선형 구조·차원 구분",
+    "textChars": 298,
+    "embeddedImages": 2,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "linear",
+    "page": 5,
+    "topic": "순차 탐색 코드",
+    "textChars": 391,
+    "embeddedImages": 2,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "linear",
+    "page": 6,
+    "topic": "닫힌 구간 이분 탐색 코드",
+    "textChars": 538,
+    "embeddedImages": 3,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "linear",
+    "page": 7,
+    "topic": "lower/upper 경계 패턴",
+    "textChars": 386,
+    "embeddedImages": 4,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "linear",
+    "page": 8,
+    "topic": "순차/이분 비교 표",
+    "textChars": 232,
+    "embeddedImages": 2,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "linear",
+    "page": 9,
+    "topic": "STL sort 오름차순",
+    "textChars": 369,
+    "embeddedImages": 3,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "linear",
+    "page": 10,
+    "topic": "STL sort 내림차순 cmp",
+    "textChars": 432,
+    "embeddedImages": 3,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "linear",
+    "page": 11,
+    "topic": "연습문제 #1 안내",
+    "textChars": 108,
+    "embeddedImages": 4,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "graph",
+    "page": 1,
+    "topic": "비선형 구조(1) 표지",
+    "textChars": 34,
+    "embeddedImages": 3,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "이미지 수식·그림을 원본 렌더링과 대조. 빈 표·빈 페이지는 내용 미생성."
+  },
+  {
+    "sourceId": "graph",
+    "page": 2,
+    "topic": "비선형 구조·정점·간선",
+    "textChars": 327,
+    "embeddedImages": 2,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "graph",
+    "page": 3,
+    "topic": "경로·회로 그림",
+    "textChars": 222,
+    "embeddedImages": 2,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "graph",
+    "page": 4,
+    "topic": "자기 간선·다중 간선·차수",
+    "textChars": 265,
+    "embeddedImages": 2,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "graph",
+    "page": 5,
+    "topic": "트리 정의",
+    "textChars": 156,
+    "embeddedImages": 2,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "graph",
+    "page": 6,
+    "topic": "노드 용어·깊이·높이",
+    "textChars": 398,
+    "embeddedImages": 2,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "graph",
+    "page": 7,
+    "topic": "가중/무가중 인접행렬 그림",
+    "textChars": 358,
+    "embeddedImages": 2,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "graph",
+    "page": 8,
+    "topic": "행렬 입력 코드",
+    "textChars": 409,
+    "embeddedImages": 2,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "graph",
+    "page": 9,
+    "topic": "인접리스트 정의",
+    "textChars": 203,
+    "embeddedImages": 2,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "graph",
+    "page": 10,
+    "topic": "무가중 연결 리스트 그림",
+    "textChars": 169,
+    "embeddedImages": 2,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "graph",
+    "page": 11,
+    "topic": "가중 연결 리스트 그림",
+    "textChars": 202,
+    "embeddedImages": 2,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "graph",
+    "page": 12,
+    "topic": "vector 표현 그림",
+    "textChars": 289,
+    "embeddedImages": 3,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "graph",
+    "page": 13,
+    "topic": "그래프 표현 비교",
+    "textChars": 362,
+    "embeddedImages": 2,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "graph",
+    "page": 14,
+    "topic": "pair<int,int> 가중 목록",
+    "textChars": 362,
+    "embeddedImages": 2,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "graph",
+    "page": 15,
+    "topic": "양방향 push_back 코드",
+    "textChars": 485,
+    "embeddedImages": 2,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "graph",
+    "page": 16,
+    "topic": "vector 함수 표",
+    "textChars": 375,
+    "embeddedImages": 2,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "graph",
+    "page": 17,
+    "topic": "연습문제 #2 안내",
+    "textChars": 108,
+    "embeddedImages": 4,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "dfs",
+    "page": 1,
+    "topic": "비선형 구조(2) 표지",
+    "textChars": 34,
+    "embeddedImages": 3,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "이미지 수식·그림을 원본 렌더링과 대조. 빈 표·빈 페이지는 내용 미생성."
+  },
+  {
+    "sourceId": "dfs",
+    "page": 2,
+    "topic": "DFS 정의·백트랙",
+    "textChars": 335,
+    "embeddedImages": 2,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "dfs",
+    "page": 3,
+    "topic": "BFS 정의·큐",
+    "textChars": 277,
+    "embeddedImages": 2,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "dfs",
+    "page": 4,
+    "topic": "DFS 공통 선언",
+    "textChars": 220,
+    "embeddedImages": 2,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "dfs",
+    "page": 5,
+    "topic": "재귀 DFS 코드",
+    "textChars": 294,
+    "embeddedImages": 2,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "dfs",
+    "page": 6,
+    "topic": "수업 스택 DFS 코드",
+    "textChars": 419,
+    "embeddedImages": 2,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "dfs",
+    "page": 7,
+    "topic": "행렬 입력·dfs(1)",
+    "textChars": 198,
+    "embeddedImages": 2,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "dfs",
+    "page": 8,
+    "topic": "BFS 공통 선언",
+    "textChars": 210,
+    "embeddedImages": 2,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "dfs",
+    "page": 9,
+    "topic": "큐 BFS 코드",
+    "textChars": 382,
+    "embeddedImages": 2,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "dfs",
+    "page": 10,
+    "topic": "행렬 입력·bfs(1)",
+    "textChars": 198,
+    "embeddedImages": 2,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "dfs",
+    "page": 11,
+    "topic": "연습문제 안내(원본 #2)",
+    "textChars": 108,
+    "embeddedImages": 4,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "bfs",
+    "page": 1,
+    "topic": "비선형 구조(3) 표지",
+    "textChars": 34,
+    "embeddedImages": 3,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "이미지 수식·그림을 원본 렌더링과 대조. 빈 표·빈 페이지는 내용 미생성."
+  },
+  {
+    "sourceId": "bfs",
+    "page": 2,
+    "topic": "두더지 굴 전체 문제 이미지",
+    "textChars": 69,
+    "embeddedImages": 6,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "bfs",
+    "page": 3,
+    "topic": "DFS 선언·4방향 좌표",
+    "textChars": 414,
+    "embeddedImages": 2,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "bfs",
+    "page": 4,
+    "topic": "입출력 코드",
+    "textChars": 289,
+    "embeddedImages": 3,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "bfs",
+    "page": 5,
+    "topic": "safe와 내림차순 cmp",
+    "textChars": 269,
+    "embeddedImages": 2,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "bfs",
+    "page": 6,
+    "topic": "영역 시작·크기 집계·정렬",
+    "textChars": 356,
+    "embeddedImages": 4,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "bfs",
+    "page": 7,
+    "topic": "재귀 DFS 라벨",
+    "textChars": 327,
+    "embeddedImages": 4,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "bfs",
+    "page": 8,
+    "topic": "스택 DFS 역순 push·pop 표시",
+    "textChars": 470,
+    "embeddedImages": 2,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "bfs",
+    "page": 9,
+    "topic": "BFS 선언·4방향",
+    "textChars": 414,
+    "embeddedImages": 2,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "bfs",
+    "page": 10,
+    "topic": "입출력 코드",
+    "textChars": 289,
+    "embeddedImages": 2,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "bfs",
+    "page": 11,
+    "topic": "safe와 cmp",
+    "textChars": 269,
+    "embeddedImages": 2,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "bfs",
+    "page": 12,
+    "topic": "BFS 영역 집계",
+    "textChars": 356,
+    "embeddedImages": 4,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "bfs",
+    "page": 13,
+    "topic": "큐 삽입 시 라벨",
+    "textChars": 415,
+    "embeddedImages": 2,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "bfs",
+    "page": 14,
+    "topic": "연습문제 #3 안내",
+    "textChars": 108,
+    "embeddedImages": 4,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "relation-1",
+    "page": 1,
+    "topic": "수업 및 평가 안내 표지",
+    "textChars": 20,
+    "embeddedImages": 4,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "이미지 수식·그림을 원본 렌더링과 대조. 빈 표·빈 페이지는 내용 미생성."
+  },
+  {
+    "sourceId": "relation-1",
+    "page": 2,
+    "topic": "교재·강의 개요",
+    "textChars": 281,
+    "embeddedImages": 6,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "relation-1",
+    "page": 3,
+    "topic": "평가 안내(안) 표",
+    "textChars": 16,
+    "embeddedImages": 8,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "이미지 수식·그림을 원본 렌더링과 대조. 빈 표·빈 페이지는 내용 미생성."
+  },
+  {
+    "sourceId": "relation-1",
+    "page": 4,
+    "topic": "수업 참여 주의사항",
+    "textChars": 91,
+    "embeddedImages": 5,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "relation-1",
+    "page": 5,
+    "topic": "CPU 실행시간 측정",
+    "textChars": 195,
+    "embeddedImages": 3,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "relation-1",
+    "page": 6,
+    "topic": "시간 측정 C 코드",
+    "textChars": 265,
+    "embeddedImages": 4,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "relation-1",
+    "page": 7,
+    "topic": "Chap #1 표지",
+    "textChars": 22,
+    "embeddedImages": 4,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "이미지 수식·그림을 원본 렌더링과 대조. 빈 표·빈 페이지는 내용 미생성."
+  },
+  {
+    "sourceId": "relation-1",
+    "page": 8,
+    "topic": "탐색·관계 기반 설계 비교",
+    "textChars": 252,
+    "embeddedImages": 5,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "relation-1",
+    "page": 9,
+    "topic": "수학적 귀납법",
+    "textChars": 300,
+    "embeddedImages": 2,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "relation-1",
+    "page": 10,
+    "topic": "1..n 합, n-1 점화식",
+    "textChars": 248,
+    "embeddedImages": 4,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "relation-1",
+    "page": 11,
+    "topic": "합의 짝수 절반 분할",
+    "textChars": 166,
+    "embeddedImages": 4,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "relation-1",
+    "page": 12,
+    "topic": "합의 홀수 절반 분할",
+    "textChars": 238,
+    "embeddedImages": 4,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "relation-1",
+    "page": 13,
+    "topic": "홀짝 통합 관계식",
+    "textChars": 192,
+    "embeddedImages": 4,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "relation-1",
+    "page": 14,
+    "topic": "성능 비교 과제 표",
+    "textChars": 135,
+    "embeddedImages": 2,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "relation-1",
+    "page": 15,
+    "topic": "진법 변환 문제",
+    "textChars": 96,
+    "embeddedImages": 5,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "relation-1",
+    "page": 16,
+    "topic": "진법 변환 관계식 이미지",
+    "textChars": 0,
+    "embeddedImages": 1,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "이미지 수식·그림을 원본 렌더링과 대조. 빈 표·빈 페이지는 내용 미생성."
+  },
+  {
+    "sourceId": "relation-1",
+    "page": 17,
+    "topic": "문제1 숫자 뒤집기(S)",
+    "textChars": 125,
+    "embeddedImages": 6,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "relation-1",
+    "page": 18,
+    "topic": "나머지와 flag 전략",
+    "textChars": 178,
+    "embeddedImages": 6,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "relation-1",
+    "page": 19,
+    "topic": "연습문제 #1 안내",
+    "textChars": 131,
+    "embeddedImages": 5,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "relation-2",
+    "page": 1,
+    "topic": "Chap #2 표지",
+    "textChars": 22,
+    "embeddedImages": 4,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "이미지 수식·그림을 원본 렌더링과 대조. 빈 표·빈 페이지는 내용 미생성."
+  },
+  {
+    "sourceId": "relation-2",
+    "page": 2,
+    "topic": "숫자 뒤집기 조건",
+    "textChars": 125,
+    "embeddedImages": 7,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "relation-2",
+    "page": 3,
+    "topic": "나머지·flag와 입력 0 확장",
+    "textChars": 214,
+    "embeddedImages": 7,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "relation-2",
+    "page": 4,
+    "topic": "log10·pow 전략",
+    "textChars": 288,
+    "embeddedImages": 6,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "relation-2",
+    "page": 5,
+    "topic": "의도적 오류 전략 #3",
+    "textChars": 318,
+    "embeddedImages": 13,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "relation-2",
+    "page": 6,
+    "topic": "오류 분석·수정 과제",
+    "textChars": 291,
+    "embeddedImages": 22,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "relation-2",
+    "page": 7,
+    "topic": "문제2 별 그리기 그림",
+    "textChars": 90,
+    "embeddedImages": 6,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "relation-2",
+    "page": 8,
+    "topic": "재귀 별 출력 순서",
+    "textChars": 199,
+    "embeddedImages": 9,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "relation-2",
+    "page": 9,
+    "topic": "문자열 줄 단위 출력",
+    "textChars": 126,
+    "embeddedImages": 8,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "relation-2",
+    "page": 10,
+    "topic": "별 응용 도형 이미지와 반복문 제한",
+    "textChars": 43,
+    "embeddedImages": 4,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "이미지 수식·그림을 원본 렌더링과 대조. 빈 표·빈 페이지는 내용 미생성."
+  },
+  {
+    "sourceId": "relation-2",
+    "page": 11,
+    "topic": "연습문제 #2 안내",
+    "textChars": 131,
+    "embeddedImages": 5,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "relation-3",
+    "page": 1,
+    "topic": "Chap #3 표지",
+    "textChars": 22,
+    "embeddedImages": 4,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "이미지 수식·그림을 원본 렌더링과 대조. 빈 표·빈 페이지는 내용 미생성."
+  },
+  {
+    "sourceId": "relation-3",
+    "page": 2,
+    "topic": "문제3 조합, factorial overflow",
+    "textChars": 226,
+    "embeddedImages": 4,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "relation-3",
+    "page": 3,
+    "topic": "선택·미선택 그림",
+    "textChars": 43,
+    "embeddedImages": 7,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "이미지 수식·그림을 원본 렌더링과 대조. 빈 표·빈 페이지는 내용 미생성."
+  },
+  {
+    "sourceId": "relation-3",
+    "page": 4,
+    "topic": "파스칼 점화식과 기초",
+    "textChars": 190,
+    "embeddedImages": 5,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "relation-3",
+    "page": 5,
+    "topic": "곱셈형 조합 관계식",
+    "textChars": 245,
+    "embeddedImages": 5,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "relation-3",
+    "page": 6,
+    "topic": "계산 순서·실수 오차",
+    "textChars": 315,
+    "embeddedImages": 5,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "relation-3",
+    "page": 7,
+    "topic": "조합 결과·시간 비교 표",
+    "textChars": 303,
+    "embeddedImages": 5,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "relation-3",
+    "page": 8,
+    "topic": "문제4 2×n 타일과 조건",
+    "textChars": 183,
+    "embeddedImages": 7,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "relation-3",
+    "page": 9,
+    "topic": "끝 타일 분류와 초기값",
+    "textChars": 266,
+    "embeddedImages": 6,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "relation-3",
+    "page": 10,
+    "topic": "타일 짝수 분할식",
+    "textChars": 149,
+    "embeddedImages": 6,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "relation-3",
+    "page": 11,
+    "topic": "타일 홀수 분할식",
+    "textChars": 198,
+    "embeddedImages": 6,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "relation-3",
+    "page": 12,
+    "topic": "m=99999 성능 비교 표",
+    "textChars": 256,
+    "embeddedImages": 5,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "relation-3",
+    "page": 13,
+    "topic": "연습문제 #3와 CodeUp 문제 목록",
+    "textChars": 143,
+    "embeddedImages": 6,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "relation-4",
+    "page": 1,
+    "topic": "원본 표제 Chap #5",
+    "textChars": 22,
+    "embeddedImages": 4,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "이미지 수식·그림을 원본 렌더링과 대조. 빈 표·빈 페이지는 내용 미생성."
+  },
+  {
+    "sourceId": "relation-4",
+    "page": 2,
+    "topic": "분할 정복 정의·의사코드",
+    "textChars": 320,
+    "embeddedImages": 9,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "relation-4",
+    "page": 3,
+    "topic": "문제5 노드 거리",
+    "textChars": 185,
+    "embeddedImages": 13,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "relation-4",
+    "page": 4,
+    "topic": "LCA·부모 x/2 관계식",
+    "textChars": 198,
+    "embeddedImages": 8,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "relation-4",
+    "page": 5,
+    "topic": "문제6 영역 구분 문제 이미지",
+    "textChars": 0,
+    "embeddedImages": 9,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "이미지 수식·그림을 원본 렌더링과 대조. 빈 표·빈 페이지는 내용 미생성."
+  },
+  {
+    "sourceId": "relation-4",
+    "page": 6,
+    "topic": "영역 구분 조건·입출력 그림",
+    "textChars": 123,
+    "embeddedImages": 6,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "relation-4",
+    "page": 7,
+    "topic": "전역 카운터 4분할",
+    "textChars": 293,
+    "embeddedImages": 8,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "relation-4",
+    "page": 8,
+    "topic": "색별 반환값 4분할",
+    "textChars": 410,
+    "embeddedImages": 12,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "relation-4",
+    "page": 9,
+    "topic": "문제7 이진 암호 이미지",
+    "textChars": 30,
+    "embeddedImages": 11,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "이미지 수식·그림을 원본 렌더링과 대조. 빈 표·빈 페이지는 내용 미생성."
+  },
+  {
+    "sourceId": "relation-4",
+    "page": 10,
+    "topic": "이진 암호 점화식",
+    "textChars": 202,
+    "embeddedImages": 5,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "relation-4",
+    "page": 11,
+    "topic": "문제8 이진 복원 이미지",
+    "textChars": 3,
+    "embeddedImages": 15,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "이미지 수식·그림을 원본 렌더링과 대조. 빈 표·빈 페이지는 내용 미생성."
+  },
+  {
+    "sourceId": "relation-4",
+    "page": 12,
+    "topic": "공유 큐·인덱스 복원",
+    "textChars": 284,
+    "embeddedImages": 5,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "relation-4",
+    "page": 13,
+    "topic": "연습문제 #4 안내",
+    "textChars": 131,
+    "embeddedImages": 5,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "relation-4",
+    "page": 14,
+    "topic": "파일 입출력 참고 코드",
+    "textChars": 237,
+    "embeddedImages": 6,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "relation-5",
+    "page": 1,
+    "topic": "Chap #5 동적표 표지",
+    "textChars": 26,
+    "embeddedImages": 4,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "이미지 수식·그림을 원본 렌더링과 대조. 빈 표·빈 페이지는 내용 미생성."
+  },
+  {
+    "sourceId": "relation-5",
+    "page": 2,
+    "topic": "문제9 정수 분할 문제·출력",
+    "textChars": 19,
+    "embeddedImages": 9,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "이미지 수식·그림을 원본 렌더링과 대조. 빈 표·빈 페이지는 내용 미생성."
+  },
+  {
+    "sourceId": "relation-5",
+    "page": 3,
+    "topic": "분할 상태와 합 전개식",
+    "textChars": 161,
+    "embeddedImages": 6,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "relation-5",
+    "page": 4,
+    "topic": "재귀 호출 트리",
+    "textChars": 94,
+    "embeddedImages": 6,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "relation-5",
+    "page": 5,
+    "topic": "비증가 분할 열거 추적",
+    "textChars": 452,
+    "embeddedImages": 6,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "relation-5",
+    "page": 6,
+    "topic": "두 갈래 분할 식",
+    "textChars": 201,
+    "embeddedImages": 6,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "relation-5",
+    "page": 7,
+    "topic": "동적표 정의와 합 표",
+    "textChars": 224,
+    "embeddedImages": 8,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "relation-5",
+    "page": 8,
+    "topic": "피보나치·메모이제이션",
+    "textChars": 253,
+    "embeddedImages": 7,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "relation-5",
+    "page": 9,
+    "topic": "실행시간 표와 호출 트리 이미지",
+    "textChars": 0,
+    "embeddedImages": 11,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "이미지 수식·그림을 원본 렌더링과 대조. 빈 표·빈 페이지는 내용 미생성."
+  },
+  {
+    "sourceId": "relation-5",
+    "page": 10,
+    "topic": "하향식 합·캐시 코드",
+    "textChars": 350,
+    "embeddedImages": 7,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "relation-5",
+    "page": 11,
+    "topic": "상향식 반복·재귀 코드",
+    "textChars": 214,
+    "embeddedImages": 7,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "relation-5",
+    "page": 12,
+    "topic": "숫자 뒤집기(L)와 메모 효율",
+    "textChars": 308,
+    "embeddedImages": 5,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "relation-5",
+    "page": 13,
+    "topic": "Combination(L) 하향·상향 DP",
+    "textChars": 223,
+    "embeddedImages": 2,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "relation-5",
+    "page": 14,
+    "topic": "선택/미선택 백트래킹",
+    "textChars": 302,
+    "embeddedImages": 3,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "relation-5",
+    "page": 15,
+    "topic": "다이나미컬 백트래킹",
+    "textChars": 132,
+    "embeddedImages": 2,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "relation-5",
+    "page": 16,
+    "topic": "동적표 비교 화면 이미지",
+    "textChars": 25,
+    "embeddedImages": 5,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "이미지 수식·그림을 원본 렌더링과 대조. 빈 표·빈 페이지는 내용 미생성."
+  },
+  {
+    "sourceId": "relation-5",
+    "page": 17,
+    "topic": "mod100009 결과·성능 과제 표",
+    "textChars": 340,
+    "embeddedImages": 3,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "relation-5",
+    "page": 18,
+    "topic": "연습문제 #5 안내",
+    "textChars": 131,
+    "embeddedImages": 5,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "relation-6",
+    "page": 1,
+    "topic": "원본 표제 Chap #9",
+    "textChars": 26,
+    "embeddedImages": 4,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "이미지 수식·그림을 원본 렌더링과 대조. 빈 표·빈 페이지는 내용 미생성."
+  },
+  {
+    "sourceId": "relation-6",
+    "page": 2,
+    "topic": "문제3 숙직 선생님 전체 조건 이미지",
+    "textChars": 0,
+    "embeddedImages": 6,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "이미지 수식·그림을 원본 렌더링과 대조. 빈 표·빈 페이지는 내용 미생성."
+  },
+  {
+    "sourceId": "relation-6",
+    "page": 3,
+    "topic": "3분기 전체탐색·배제",
+    "textChars": 137,
+    "embeddedImages": 4,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "relation-6",
+    "page": 4,
+    "topic": "큐와 최소단계 동적표",
+    "textChars": 149,
+    "embeddedImages": 7,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "relation-6",
+    "page": 5,
+    "topic": "문제4 광석 수집 전체 조건 이미지",
+    "textChars": 0,
+    "embeddedImages": 6,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "이미지 수식·그림을 원본 렌더링과 대조. 빈 표·빈 페이지는 내용 미생성."
+  },
+  {
+    "sourceId": "relation-6",
+    "page": 6,
+    "topic": "광석 재귀·반복 DP",
+    "textChars": 242,
+    "embeddedImages": 6,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "relation-6",
+    "page": 7,
+    "topic": "연습문제 #6 안내",
+    "textChars": 131,
+    "embeddedImages": 5,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "reference",
+    "page": 1,
+    "topic": "배열 주소·STL sort",
+    "textChars": 657,
+    "embeddedImages": 0,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "reference",
+    "page": 2,
+    "topic": "lower/upper 설명과 표 충돌",
+    "textChars": 513,
+    "embeddedImages": 0,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "reference",
+    "page": 3,
+    "topic": "스택·큐 API",
+    "textChars": 478,
+    "embeddedImages": 0,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "reference",
+    "page": 4,
+    "topic": "미완성 빈 표",
+    "textChars": 29,
+    "embeddedImages": 0,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "reference",
+    "page": 5,
+    "topic": "미완성 빈 표",
+    "textChars": 64,
+    "embeddedImages": 0,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "reference",
+    "page": 6,
+    "topic": "미로를 그래프로 표현 코드·그림",
+    "textChars": 1007,
+    "embeddedImages": 1,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "reference",
+    "page": 7,
+    "topic": "스택 이진 변환·0 처리",
+    "textChars": 412,
+    "embeddedImages": 0,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "reference",
+    "page": 8,
+    "topic": "입력 순서 인접리스트 DFS",
+    "textChars": 701,
+    "embeddedImages": 0,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "reference",
+    "page": 9,
+    "topic": "입력 순서 인접리스트 BFS",
+    "textChars": 858,
+    "embeddedImages": 0,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "텍스트 및 렌더링 대조"
+  },
+  {
+    "sourceId": "reference",
+    "page": 10,
+    "topic": "빈 페이지",
+    "textChars": 0,
+    "embeddedImages": 0,
+    "textInspected": true,
+    "renderInspected": true,
+    "note": "이미지 수식·그림을 원본 렌더링과 대조. 빈 표·빈 페이지는 내용 미생성."
+  }
+]

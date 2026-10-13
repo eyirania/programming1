@@ -1,0 +1,2101 @@
+[
+  {
+    "id": "linear-structure",
+    "unitId": "linear",
+    "name": "선형 구조",
+    "english": "Linear Structure",
+    "summary": "탐색 순서에서 다음 자료가 유일하게 정해지는 구조.",
+    "detail": "저장 배열의 차원보다 탐색 순서가 결정되어 있는지가 기준이다.",
+    "conditions": "순서가 미리 정의되어 있다.",
+    "misconception": "2차원 배열은 무조건 비선형이다.",
+    "correction": "행 우선처럼 순서가 고정되면 다차원 배열도 선형으로 볼 수 있다.",
+    "importance": "Essential",
+    "sources": [
+      {
+        "sourceId": "linear",
+        "page": 4
+      }
+    ],
+    "related": [],
+    "keywords": [
+      "선형 구조",
+      "Linear Structure"
+    ],
+    "hints": [
+      "02 선형 구조의 탐색에 속하는 개념입니다.",
+      "순서가 미리 정의되어 있다."
+    ],
+    "basis": "lecture"
+  },
+  {
+    "id": "sequential",
+    "unitId": "linear",
+    "name": "순차 탐색",
+    "english": "Sequential Search",
+    "summary": "앞에서부터 하나씩 비교하며 찾는다. 최악 O(n).",
+    "detail": "첫 일치 인덱스를 반환하며 끝까지 없으면 -1을 반환한다.",
+    "conditions": "정렬되지 않은 배열에서도 사용 가능.",
+    "misconception": "못 찾았을 때 0을 반환해도 된다.",
+    "correction": "0은 유효한 첫 인덱스이므로 실패 값 -1과 구별해야 한다.",
+    "importance": "Essential",
+    "sources": [
+      {
+        "sourceId": "linear",
+        "page": 5
+      }
+    ],
+    "related": [],
+    "keywords": [
+      "순차 탐색",
+      "Sequential Search"
+    ],
+    "hints": [
+      "02 선형 구조의 탐색에 속하는 개념입니다.",
+      "정렬되지 않은 배열에서도 사용 가능."
+    ],
+    "basis": "lecture"
+  },
+  {
+    "id": "binary",
+    "unitId": "linear",
+    "name": "이분 탐색",
+    "english": "Binary Search",
+    "summary": "정렬된 배열에서 중앙을 비교하며 구간을 절반으로 줄인다.",
+    "detail": "닫힌 구간 [l,r]이면 l<=r 동안 검사하고 l=mid+1 또는 r=mid-1로 줄인다.",
+    "conditions": "이 수업의 오름차순 배열, 임의 접근 가능.",
+    "misconception": "중복 값의 첫 인덱스가 항상 반환된다.",
+    "correction": "일반 이분 탐색은 임의의 일치 위치를 찾는다. 첫 위치는 lower_bound로 구한다.",
+    "importance": "Essential",
+    "sources": [
+      {
+        "sourceId": "linear",
+        "page": 6
+      }
+    ],
+    "related": [
+      "lower",
+      "upper",
+      "frequency",
+      "sort-range"
+    ],
+    "keywords": [
+      "이분 탐색",
+      "Binary Search"
+    ],
+    "hints": [
+      "02 선형 구조의 탐색에 속하는 개념입니다.",
+      "이 수업의 오름차순 배열, 임의 접근 가능."
+    ],
+    "basis": "lecture"
+  },
+  {
+    "id": "lower",
+    "unitId": "linear",
+    "name": "lower_bound",
+    "english": "Lower Bound",
+    "summary": "오름차순에서 key 이상인 첫 위치.",
+    "detail": "없으면 끝 위치 n이다. 후보를 기록한 뒤 왼쪽 구간을 계속 확인한다.",
+    "conditions": "정렬된 배열, [first,last) 범위.",
+    "misconception": "upper_bound가 이상을 찾는다.",
+    "correction": "선형 슬라이드가 우선이다. lower는 >=, upper는 >이다. 참고자료 p.2 첫 문장은 뒤바뀌어 있다.",
+    "importance": "Essential",
+    "sources": [
+      {
+        "sourceId": "linear",
+        "page": 7
+      }
+    ],
+    "related": [
+      "binary",
+      "upper",
+      "frequency",
+      "sort-range"
+    ],
+    "keywords": [
+      "lower_bound",
+      "Lower Bound"
+    ],
+    "hints": [
+      "02 선형 구조의 탐색에 속하는 개념입니다.",
+      "정렬된 배열, [first,last) 범위."
+    ],
+    "basis": "lecture"
+  },
+  {
+    "id": "upper",
+    "unitId": "linear",
+    "name": "upper_bound",
+    "english": "Upper Bound",
+    "summary": "오름차순에서 key를 초과하는 첫 위치.",
+    "detail": "없으면 n을 반환한다. 마지막 원소의 다음 위치는 역참조할 수 없다.",
+    "conditions": "정렬된 배열, [first,last) 범위.",
+    "misconception": "찾을 값이 없으면 항상 -1이다.",
+    "correction": "STL 경계 함수는 조건을 만족하는 위치가 없으면 last를 반환한다.",
+    "importance": "Essential",
+    "sources": [
+      {
+        "sourceId": "linear",
+        "page": 7
+      }
+    ],
+    "related": [
+      "binary",
+      "lower",
+      "frequency",
+      "sort-range"
+    ],
+    "keywords": [
+      "upper_bound",
+      "Upper Bound"
+    ],
+    "hints": [
+      "02 선형 구조의 탐색에 속하는 개념입니다.",
+      "정렬된 배열, [first,last) 범위."
+    ],
+    "basis": "lecture"
+  },
+  {
+    "id": "frequency",
+    "unitId": "reference",
+    "name": "중복 원소 개수",
+    "english": "Equal Range Count",
+    "summary": "upper_bound - lower_bound가 key의 개수이다.",
+    "detail": "두 경계 사이의 반열린 구간에 key와 같은 값만 있다.",
+    "conditions": "오름차순 정렬과 같은 비교 기준.",
+    "misconception": "key가 없으면 경계 차이가 음수이다.",
+    "correction": "존재하지 않으면 두 경계가 같아 0이다.",
+    "importance": "Essential",
+    "sources": [
+      {
+        "sourceId": "reference",
+        "page": 2
+      }
+    ],
+    "related": [
+      "binary",
+      "lower",
+      "upper",
+      "sort-range"
+    ],
+    "keywords": [
+      "중복 원소 개수",
+      "Equal Range Count"
+    ],
+    "hints": [
+      "프로그래밍Ⅰ 참고자료에 속하는 개념입니다.",
+      "오름차순 정렬과 같은 비교 기준."
+    ],
+    "basis": "reference"
+  },
+  {
+    "id": "selection",
+    "unitId": "linear",
+    "name": "선택 정렬",
+    "english": "Selection Sort",
+    "summary": "남은 구간의 최댓값을 맨 뒤와 교환한다.",
+    "detail": "수업의 최대 선택 방식은 뒤쪽부터 확정한다. 비교 횟수는 n(n-1)/2이다.",
+    "conditions": "오름차순, 최대 원소를 선택하는 버전.",
+    "misconception": "정렬된 배열이면 비교가 O(n)이다.",
+    "correction": "기본 선택 정렬은 정렬 여부와 무관하게 최악·평균·최선 비교가 Θ(n²)이다.",
+    "importance": "Essential",
+    "sources": [
+      {
+        "sourceId": "linear",
+        "page": 1
+      }
+    ],
+    "related": [
+      "quick",
+      "comparator"
+    ],
+    "keywords": [
+      "선택 정렬",
+      "Selection Sort"
+    ],
+    "hints": [
+      "02 선형 구조의 탐색에 속하는 개념입니다.",
+      "오름차순, 최대 원소를 선택하는 버전."
+    ],
+    "basis": "lecture"
+  },
+  {
+    "id": "quick",
+    "unitId": "linear",
+    "name": "퀵 정렬",
+    "english": "Quick Sort",
+    "summary": "피벗의 자리를 확정하고 양쪽 구간을 재귀 정렬한다.",
+    "detail": "균형 분할이면 평균 O(n log n), 지속적인 극단 분할이면 최악 O(n²)이다.",
+    "conditions": "분할 구현과 피벗 선택을 명시해야 추적 가능.",
+    "misconception": "항상 O(n log n)이다.",
+    "correction": "한쪽 크기가 계속 n-1이면 T(n)=T(n-1)+Θ(n)으로 Θ(n²)이다.",
+    "importance": "Important",
+    "sources": [
+      {
+        "sourceId": "linear",
+        "page": 2
+      }
+    ],
+    "related": [
+      "selection",
+      "comparator"
+    ],
+    "keywords": [
+      "퀵 정렬",
+      "Quick Sort"
+    ],
+    "hints": [
+      "02 선형 구조의 탐색에 속하는 개념입니다.",
+      "분할 구현과 피벗 선택을 명시해야 추적 가능."
+    ],
+    "basis": "lecture"
+  },
+  {
+    "id": "sort-range",
+    "unitId": "reference",
+    "name": "sort의 구간",
+    "english": "Half-open Range",
+    "summary": "sort(a,a+n)의 정렬 대상은 [a,a+n)이다.",
+    "detail": "끝 위치는 포함하지 않는다. 원소 n개를 정렬하며 반환형은 void이다.",
+    "conditions": "유효한 임의 접근 반복자 범위.",
+    "misconception": "sort가 정렬된 새 배열을 반환한다.",
+    "correction": "기존 구간을 직접 변경하고 값을 반환하지 않는다.",
+    "importance": "Essential",
+    "sources": [
+      {
+        "sourceId": "reference",
+        "page": 1
+      }
+    ],
+    "related": [
+      "binary",
+      "lower",
+      "upper",
+      "frequency"
+    ],
+    "keywords": [
+      "sort의 구간",
+      "Half-open Range"
+    ],
+    "hints": [
+      "프로그래밍Ⅰ 참고자료에 속하는 개념입니다.",
+      "유효한 임의 접근 반복자 범위."
+    ],
+    "basis": "reference"
+  },
+  {
+    "id": "comparator",
+    "unitId": "linear",
+    "name": "내림차순 비교 함수",
+    "english": "Comparator",
+    "summary": "cmp(a,b)가 a>b이면 큰 원소가 앞에 온다.",
+    "detail": "비교 함수는 엄격한 순서를 정의해야 한다. 같은 값에 대해서 false여야 한다.",
+    "conditions": "일관된 strict weak ordering.",
+    "misconception": "a>=b도 내림차순 비교로 사용할 수 있다.",
+    "correction": "동일한 두 값에 true여서 엄격한 순서 조건을 위반한다.",
+    "importance": "Essential",
+    "sources": [
+      {
+        "sourceId": "linear",
+        "page": 10
+      }
+    ],
+    "related": [
+      "selection",
+      "quick"
+    ],
+    "keywords": [
+      "내림차순 비교 함수",
+      "Comparator"
+    ],
+    "hints": [
+      "02 선형 구조의 탐색에 속하는 개념입니다.",
+      "일관된 strict weak ordering."
+    ],
+    "basis": "lecture"
+  },
+  {
+    "id": "array-address",
+    "unitId": "reference",
+    "name": "배열과 포인터 연산",
+    "english": "Array and Pointer",
+    "summary": "a+1은 원소 하나, &a+1은 배열 전체 크기만큼 이동한다.",
+    "detail": "int a[7]이면 첫 식은 int*, 둘째 식은 int (*)[7]이다. 수치 주소가 같아도 자료형이 다르다.",
+    "conditions": "sizeof(int)는 환경에 따라 다름.",
+    "misconception": "참고자료의 주소 출력값은 모든 환경에서 같다.",
+    "correction": "주소는 실행마다 다를 수 있다. 출력은 printf의 %p와 (void*)를 사용해야 한다.",
+    "importance": "Supplementary",
+    "sources": [
+      {
+        "sourceId": "reference",
+        "page": 1
+      }
+    ],
+    "related": [],
+    "keywords": [
+      "배열과 포인터 연산",
+      "Array and Pointer"
+    ],
+    "hints": [
+      "프로그래밍Ⅰ 참고자료에 속하는 개념입니다.",
+      "sizeof(int)는 환경에 따라 다름."
+    ],
+    "basis": "reference"
+  },
+  {
+    "id": "stack",
+    "unitId": "reference",
+    "name": "스택",
+    "english": "Stack",
+    "summary": "마지막에 넣은 것이 먼저 나오는 LIFO 구조.",
+    "detail": "push로 삽입하고 top으로 확인한 뒤 pop으로 삭제한다.",
+    "conditions": "top/pop 전에 비어 있지 않은지 확인.",
+    "misconception": "pop이 제거한 값을 반환한다.",
+    "correction": "C++ stack::pop은 void이다. 값을 먼저 top으로 읽는다.",
+    "importance": "Essential",
+    "sources": [
+      {
+        "sourceId": "reference",
+        "page": 3
+      }
+    ],
+    "related": [
+      "queue",
+      "dfs",
+      "bfs"
+    ],
+    "keywords": [
+      "스택",
+      "Stack"
+    ],
+    "hints": [
+      "프로그래밍Ⅰ 참고자료에 속하는 개념입니다.",
+      "top/pop 전에 비어 있지 않은지 확인."
+    ],
+    "basis": "reference"
+  },
+  {
+    "id": "queue",
+    "unitId": "reference",
+    "name": "큐",
+    "english": "Queue",
+    "summary": "먼저 넣은 것이 먼저 나오는 FIFO 구조.",
+    "detail": "push로 뒤에 넣고 front로 앞을 확인한 뒤 pop으로 삭제한다.",
+    "conditions": "front/pop 전에 empty 확인.",
+    "misconception": "큐도 마지막에 넣은 값부터 꺼낸다.",
+    "correction": "그것은 스택이다. BFS는 먼저 발견한 정점부터 처리하는 큐가 필요하다.",
+    "importance": "Essential",
+    "sources": [
+      {
+        "sourceId": "reference",
+        "page": 3
+      }
+    ],
+    "related": [
+      "stack",
+      "dfs",
+      "bfs"
+    ],
+    "keywords": [
+      "큐",
+      "Queue"
+    ],
+    "hints": [
+      "프로그래밍Ⅰ 참고자료에 속하는 개념입니다.",
+      "front/pop 전에 empty 확인."
+    ],
+    "basis": "reference"
+  },
+  {
+    "id": "nonlinear",
+    "unitId": "graph",
+    "name": "비선형 구조",
+    "english": "Nonlinear Structure",
+    "summary": "현재 자료 다음에 탐색할 연결 자료가 여러 개일 수 있다.",
+    "detail": "그래프·트리의 관계를 인접 정보로 저장하고 탐색 순서를 정한다.",
+    "conditions": "정점 간 관계를 명시.",
+    "misconception": "비선형이면 반복문 구현이 불가능하다.",
+    "correction": "명시적 스택이나 큐를 쓰면 반복문으로도 탐색할 수 있다.",
+    "importance": "Essential",
+    "sources": [
+      {
+        "sourceId": "graph",
+        "page": 2
+      }
+    ],
+    "related": [],
+    "keywords": [
+      "비선형 구조",
+      "Nonlinear Structure"
+    ],
+    "hints": [
+      "03 비선형 구조의 탐색(1)에 속하는 개념입니다.",
+      "정점 간 관계를 명시."
+    ],
+    "basis": "lecture"
+  },
+  {
+    "id": "graph",
+    "unitId": "graph",
+    "name": "그래프",
+    "english": "Graph",
+    "summary": "정점과 간선으로 객체와 관계를 나타낸다.",
+    "detail": "정점은 자료, 간선은 연결 관계이다. 방향과 가중치는 별개의 속성이다.",
+    "conditions": "방향·가중치·중복 간선 허용 여부 확인.",
+    "misconception": "모든 그래프의 간선은 양방향이다.",
+    "correction": "방향 그래프는 a→b와 b→a를 구분한다.",
+    "importance": "Essential",
+    "sources": [
+      {
+        "sourceId": "graph",
+        "page": 3
+      }
+    ],
+    "related": [
+      "matrix",
+      "adjlist",
+      "undirected",
+      "vector",
+      "pair"
+    ],
+    "keywords": [
+      "그래프",
+      "Graph"
+    ],
+    "hints": [
+      "03 비선형 구조의 탐색(1)에 속하는 개념입니다.",
+      "방향·가중치·중복 간선 허용 여부 확인."
+    ],
+    "basis": "lecture"
+  },
+  {
+    "id": "path-cycle",
+    "unitId": "graph",
+    "name": "경로와 회로",
+    "english": "Path and Cycle",
+    "summary": "경로는 연결을 따라 이동하는 순서, 회로는 시작점으로 돌아오는 경로이다.",
+    "detail": "자료는 경로를 간선의 순서로 설명한다. 일반 그래프 이론의 단순 경로·단순 회로는 반복 제한이 추가된다.",
+    "conditions": "문제에서 경로의 반복 허용 여부 확인.",
+    "misconception": "간선이 이어지지 않아도 정점 목록이면 경로이다.",
+    "correction": "인접한 각 정점 쌍을 연결하는 간선이 있어야 한다.",
+    "importance": "Supplementary",
+    "sources": [
+      {
+        "sourceId": "graph",
+        "page": 3
+      }
+    ],
+    "related": [],
+    "keywords": [
+      "경로와 회로",
+      "Path and Cycle"
+    ],
+    "hints": [
+      "03 비선형 구조의 탐색(1)에 속하는 개념입니다.",
+      "문제에서 경로의 반복 허용 여부 확인."
+    ],
+    "basis": "lecture"
+  },
+  {
+    "id": "degree",
+    "unitId": "graph",
+    "name": "그래프 차수",
+    "english": "Vertex Degree",
+    "summary": "무방향 그래프에서 정점에 접한 간선 끝의 수.",
+    "detail": "단순 그래프에서는 이웃 수와 같지만 자기 간선은 차수에 2를 더한다.",
+    "conditions": "무방향; 방향 그래프는 진입·진출 차수 구분.",
+    "misconception": "자기 간선은 차수 1이다.",
+    "correction": "무방향 자기 간선은 양 끝이 같은 정점에 접하므로 2로 센다. 수업 표현의 보충이다.",
+    "importance": "Supplementary",
+    "sources": [
+      {
+        "sourceId": "graph",
+        "page": 4
+      }
+    ],
+    "related": [],
+    "keywords": [
+      "그래프 차수",
+      "Vertex Degree"
+    ],
+    "hints": [
+      "03 비선형 구조의 탐색(1)에 속하는 개념입니다.",
+      "무방향; 방향 그래프는 진입·진출 차수 구분."
+    ],
+    "basis": "lecture"
+  },
+  {
+    "id": "tree",
+    "unitId": "graph",
+    "name": "트리",
+    "english": "Tree",
+    "summary": "연결되어 있고 회로가 없는 무방향 그래프.",
+    "detail": "루트를 정하면 부모·자식 계층을 얻는다. n개 정점이면 간선은 n-1개이고 두 정점의 단순 경로가 유일하다.",
+    "conditions": "일반적인 유한 무방향 트리.",
+    "misconception": "회로만 없으면 언제나 하나의 트리이다.",
+    "correction": "연결이 끊어져 있으면 여러 트리로 이루어진 숲이다.",
+    "importance": "Essential",
+    "sources": [
+      {
+        "sourceId": "graph",
+        "page": 5
+      }
+    ],
+    "related": [
+      "tree-terms",
+      "depth-height",
+      "node-distance"
+    ],
+    "keywords": [
+      "트리",
+      "Tree"
+    ],
+    "hints": [
+      "03 비선형 구조의 탐색(1)에 속하는 개념입니다.",
+      "일반적인 유한 무방향 트리."
+    ],
+    "basis": "lecture"
+  },
+  {
+    "id": "tree-terms",
+    "unitId": "graph",
+    "name": "트리의 노드 관계",
+    "english": "Tree Terminology",
+    "summary": "루트는 최상위, 리프는 자식이 없고 형제는 부모가 같다.",
+    "detail": "부모는 현재 노드의 바로 위 노드다. 트리 차수는 자식의 수로 센다.",
+    "conditions": "루트가 지정된 트리.",
+    "misconception": "리프의 그래프 차수와 자식 수는 항상 같다.",
+    "correction": "루트가 아닌 리프의 자식 수는 0이지만 무방향 그래프 차수는 1이다.",
+    "importance": "Essential",
+    "sources": [
+      {
+        "sourceId": "graph",
+        "page": 6
+      }
+    ],
+    "related": [
+      "tree",
+      "depth-height",
+      "node-distance"
+    ],
+    "keywords": [
+      "트리의 노드 관계",
+      "Tree Terminology"
+    ],
+    "hints": [
+      "03 비선형 구조의 탐색(1)에 속하는 개념입니다.",
+      "루트가 지정된 트리."
+    ],
+    "basis": "lecture"
+  },
+  {
+    "id": "depth-height",
+    "unitId": "graph",
+    "name": "깊이와 높이",
+    "english": "Depth and Height",
+    "summary": "깊이는 루트부터의 간선 수, 트리 높이는 최대 깊이.",
+    "detail": "수업 그림은 루트 Level 0, 높이 3이다. 영문 표의 높이=Depth 표기는 일반 용어 height와 다르다.",
+    "conditions": "루트 깊이 0, 간선 수 기준.",
+    "misconception": "루트 깊이는 반드시 1이다.",
+    "correction": "레벨 시작은 관례가 달라 문제 조건을 따른다. 이 자료는 0이다.",
+    "importance": "Important",
+    "sources": [
+      {
+        "sourceId": "graph",
+        "page": 6
+      }
+    ],
+    "related": [
+      "tree",
+      "tree-terms",
+      "node-distance"
+    ],
+    "keywords": [
+      "깊이와 높이",
+      "Depth and Height"
+    ],
+    "hints": [
+      "03 비선형 구조의 탐색(1)에 속하는 개념입니다.",
+      "루트 깊이 0, 간선 수 기준."
+    ],
+    "basis": "lecture"
+  },
+  {
+    "id": "matrix",
+    "unitId": "graph",
+    "name": "인접행렬",
+    "english": "Adjacency Matrix",
+    "summary": "A[u][v]에 연결 여부 또는 가중치를 저장한다.",
+    "detail": "정점 쌍 전체를 저장하므로 공간 O(V²), 간선 여부 확인 O(1), 한 정점의 이웃 검사 O(V)이다.",
+    "conditions": "가중치 0과 간선 없음의 표현을 구분.",
+    "misconception": "가중치 0을 항상 간선 없음으로 사용해도 된다.",
+    "correction": "0 가중치가 허용되면 별도 존재 배열이나 구별되는 값이 필요하다.",
+    "importance": "Essential",
+    "sources": [
+      {
+        "sourceId": "graph",
+        "page": 7
+      }
+    ],
+    "related": [
+      "graph",
+      "adjlist",
+      "undirected",
+      "vector",
+      "pair"
+    ],
+    "keywords": [
+      "인접행렬",
+      "Adjacency Matrix"
+    ],
+    "hints": [
+      "03 비선형 구조의 탐색(1)에 속하는 개념입니다.",
+      "가중치 0과 간선 없음의 표현을 구분."
+    ],
+    "basis": "lecture"
+  },
+  {
+    "id": "undirected",
+    "unitId": "graph",
+    "name": "무방향 간선 저장",
+    "english": "Undirected Edge",
+    "summary": "A[a][b]와 A[b][a]를 모두 갱신한다.",
+    "detail": "인접리스트도 양쪽 목록에 추가한다. 단순 무방향 그래프 행렬은 대칭이다.",
+    "conditions": "무방향 그래프.",
+    "misconception": "한 번만 추가해도 자동으로 역방향이 생긴다.",
+    "correction": "행렬과 vector는 역방향 관계를 자동 생성하지 않는다.",
+    "importance": "Essential",
+    "sources": [
+      {
+        "sourceId": "graph",
+        "page": 8
+      }
+    ],
+    "related": [
+      "graph",
+      "matrix",
+      "adjlist",
+      "vector",
+      "pair"
+    ],
+    "keywords": [
+      "무방향 간선 저장",
+      "Undirected Edge"
+    ],
+    "hints": [
+      "03 비선형 구조의 탐색(1)에 속하는 개념입니다.",
+      "무방향 그래프."
+    ],
+    "basis": "lecture"
+  },
+  {
+    "id": "adjlist",
+    "unitId": "graph",
+    "name": "인접리스트",
+    "english": "Adjacency List",
+    "summary": "각 정점의 실제 이웃만 목록에 저장한다.",
+    "detail": "공간 O(V+E), 전체 이웃 순회 O(V+E). 무방향은 보통 간선을 두 번 저장한다.",
+    "conditions": "정점 목록의 순서를 별도로 정해야 한다.",
+    "misconception": "리스트는 어떤 그래프에서도 행렬보다 공간이 작다.",
+    "correction": "밀집도·자료형·구조 오버헤드에 따라 다르다. 점근 공간은 O(V+E)이다.",
+    "importance": "Essential",
+    "sources": [
+      {
+        "sourceId": "graph",
+        "page": 9
+      }
+    ],
+    "related": [
+      "graph",
+      "matrix",
+      "undirected",
+      "vector",
+      "pair"
+    ],
+    "keywords": [
+      "인접리스트",
+      "Adjacency List"
+    ],
+    "hints": [
+      "03 비선형 구조의 탐색(1)에 속하는 개념입니다.",
+      "정점 목록의 순서를 별도로 정해야 한다."
+    ],
+    "basis": "lecture"
+  },
+  {
+    "id": "vector",
+    "unitId": "graph",
+    "name": "vector",
+    "english": "Dynamic Array",
+    "summary": "크기가 자동으로 조절되는 C++ 동적 배열.",
+    "detail": "vector<int> g[101]은 정점마다 별도의 동적 배열을 둔다.",
+    "conditions": "인덱스는 0부터 size()-1까지.",
+    "misconception": "reserve한 공간은 원소로 접근 가능하다.",
+    "correction": "size에 포함된 원소만 유효하다. 용량과 크기는 다르다. 표준 지식 보충이다.",
+    "importance": "Supplementary",
+    "sources": [
+      {
+        "sourceId": "graph",
+        "page": 12
+      }
+    ],
+    "related": [
+      "graph",
+      "matrix",
+      "adjlist",
+      "undirected",
+      "pair"
+    ],
+    "keywords": [
+      "vector",
+      "Dynamic Array"
+    ],
+    "hints": [
+      "03 비선형 구조의 탐색(1)에 속하는 개념입니다.",
+      "인덱스는 0부터 size()-1까지."
+    ],
+    "basis": "lecture"
+  },
+  {
+    "id": "vector-api",
+    "unitId": "graph",
+    "name": "vector 주요 함수",
+    "english": "Vector Operations",
+    "summary": "push_back 추가, pop_back 삭제, clear 전체 삭제, size 원소 수.",
+    "detail": "front/back은 첫/끝 원소, begin/end는 첫/끝 다음 반복자다.",
+    "conditions": "비어 있을 때 front/back/pop_back 사용 금지.",
+    "misconception": "end는 마지막 원소를 가리킨다.",
+    "correction": "end는 마지막 다음 위치이며 역참조할 수 없다.",
+    "importance": "Essential",
+    "sources": [
+      {
+        "sourceId": "graph",
+        "page": 16
+      }
+    ],
+    "related": [],
+    "keywords": [
+      "vector 주요 함수",
+      "Vector Operations"
+    ],
+    "hints": [
+      "03 비선형 구조의 탐색(1)에 속하는 개념입니다.",
+      "비어 있을 때 front/back/pop_back 사용 금지."
+    ],
+    "basis": "lecture"
+  },
+  {
+    "id": "pair",
+    "unitId": "graph",
+    "name": "가중치와 pair",
+    "english": "Weighted Adjacency Pair",
+    "summary": "pair<int,int>로 인접 정점과 가중치를 묶는다.",
+    "detail": "수업의 {next,weight}에서 first는 정점 번호, second는 가중치다. <utility>를 명시한다.",
+    "conditions": "pair 필드 의미를 문제에서 정의.",
+    "misconception": "first는 항상 가중치이다.",
+    "correction": "필드 의미는 저장 순서에 달려 있다. 자료에서는 정점이 먼저다.",
+    "importance": "Important",
+    "sources": [
+      {
+        "sourceId": "graph",
+        "page": 14
+      }
+    ],
+    "related": [
+      "graph",
+      "matrix",
+      "adjlist",
+      "undirected",
+      "vector"
+    ],
+    "keywords": [
+      "가중치와 pair",
+      "Weighted Adjacency Pair"
+    ],
+    "hints": [
+      "03 비선형 구조의 탐색(1)에 속하는 개념입니다.",
+      "pair 필드 의미를 문제에서 정의."
+    ],
+    "basis": "lecture"
+  },
+  {
+    "id": "dfs",
+    "unitId": "dfs",
+    "name": "깊이 우선 탐색",
+    "english": "Depth First Search",
+    "summary": "한 방향으로 가능한 깊이 진행한 뒤 되돌아간다.",
+    "detail": "재귀의 호출 스택 또는 명시적 스택으로 구현한다. 도달 가능한 정점만 방문한다.",
+    "conditions": "시작 정점과 이웃 검사 순서 지정.",
+    "misconception": "DFS 한 번이면 모든 그래프 정점이 방문된다.",
+    "correction": "시작점과 연결되지 않은 정점은 별도 시작이 필요하다.",
+    "importance": "Essential",
+    "sources": [
+      {
+        "sourceId": "dfs",
+        "page": 2
+      }
+    ],
+    "related": [
+      "stack",
+      "queue",
+      "bfs"
+    ],
+    "keywords": [
+      "깊이 우선 탐색",
+      "Depth First Search"
+    ],
+    "hints": [
+      "03 비선형 구조의 탐색(2)에 속하는 개념입니다.",
+      "시작 정점과 이웃 검사 순서 지정."
+    ],
+    "basis": "lecture"
+  },
+  {
+    "id": "dfs-recursive",
+    "unitId": "dfs",
+    "name": "재귀 DFS 패턴",
+    "english": "Recursive DFS",
+    "summary": "현재 정점을 표시한 뒤 미방문 이웃을 재귀 호출한다.",
+    "detail": "방문 표시는 이웃 재귀 호출보다 먼저 한다. 종료는 더 방문할 이웃이 없을 때 자연스럽게 이루어진다.",
+    "conditions": "인접행렬 버전 1..n 오름차순 검사.",
+    "misconception": "visited를 함수 끝에서만 설정해도 안전하다.",
+    "correction": "무방향 간선 하나만 있어도 서로를 다시 호출하며 종료하지 못한다.",
+    "importance": "Essential",
+    "sources": [
+      {
+        "sourceId": "dfs",
+        "page": 5
+      }
+    ],
+    "related": [
+      "dfs-stack",
+      "bfs-mark",
+      "traversal-order"
+    ],
+    "keywords": [
+      "재귀 DFS 패턴",
+      "Recursive DFS"
+    ],
+    "hints": [
+      "03 비선형 구조의 탐색(2)에 속하는 개념입니다.",
+      "인접행렬 버전 1..n 오름차순 검사."
+    ],
+    "basis": "lecture"
+  },
+  {
+    "id": "dfs-stack",
+    "unitId": "dfs",
+    "name": "스택 DFS 패턴",
+    "english": "Iterative DFS",
+    "summary": "스택 꼭대기에서 미방문 이웃 하나를 찾아 깊게 진행한다.",
+    "detail": "수업 버전은 found, break, 갈 곳이 없을 때 pop을 사용한다. 매번 1부터 재검사하므로 재귀 버전보다 검사 횟수가 늘 수 있다.",
+    "conditions": "빈 스택에서 top 접근 금지.",
+    "misconception": "이웃을 모두 push하면 항상 재귀와 같은 순서이다.",
+    "correction": "push 순서와 방문 표시 시점에 따라 다르다. 수업은 하나만 push하고 즉시 break한다.",
+    "importance": "Essential",
+    "sources": [
+      {
+        "sourceId": "dfs",
+        "page": 6
+      }
+    ],
+    "related": [
+      "dfs-recursive",
+      "bfs-mark",
+      "traversal-order"
+    ],
+    "keywords": [
+      "스택 DFS 패턴",
+      "Iterative DFS"
+    ],
+    "hints": [
+      "03 비선형 구조의 탐색(2)에 속하는 개념입니다.",
+      "빈 스택에서 top 접근 금지."
+    ],
+    "basis": "lecture"
+  },
+  {
+    "id": "bfs",
+    "unitId": "dfs",
+    "name": "너비 우선 탐색",
+    "english": "Breadth First Search",
+    "summary": "시작점에서 간선 수가 가까운 정점부터 방문한다.",
+    "detail": "큐의 FIFO 순서를 사용한다. 같은 거리 안의 순서는 이웃 검사 순서에 좌우된다.",
+    "conditions": "모든 간선 비용이 같을 때 최소 단계 보장.",
+    "misconception": "가중치가 달라도 BFS가 최소 비용을 구한다.",
+    "correction": "가중치가 다르면 간선 수가 적은 경로의 비용이 더 클 수 있다.",
+    "importance": "Essential",
+    "sources": [
+      {
+        "sourceId": "dfs",
+        "page": 3
+      }
+    ],
+    "related": [
+      "stack",
+      "queue",
+      "dfs"
+    ],
+    "keywords": [
+      "너비 우선 탐색",
+      "Breadth First Search"
+    ],
+    "hints": [
+      "03 비선형 구조의 탐색(2)에 속하는 개념입니다.",
+      "모든 간선 비용이 같을 때 최소 단계 보장."
+    ],
+    "basis": "lecture"
+  },
+  {
+    "id": "bfs-mark",
+    "unitId": "dfs",
+    "name": "BFS 방문 표시",
+    "english": "Mark on Enqueue",
+    "summary": "큐에 넣을 때 방문을 표시한다.",
+    "detail": "이미 발견한 정점이 다른 정점에 의해 중복 삽입되지 않도록 막는다.",
+    "conditions": "시작 정점도 push 전에 표시.",
+    "misconception": "pop한 뒤에만 표시해도 큐 삽입은 한 번이다.",
+    "correction": "다이아몬드 구조에서 같은 정점이 두 번 들어갈 수 있다.",
+    "importance": "Essential",
+    "sources": [
+      {
+        "sourceId": "dfs",
+        "page": 9
+      }
+    ],
+    "related": [
+      "dfs-recursive",
+      "dfs-stack",
+      "traversal-order"
+    ],
+    "keywords": [
+      "BFS 방문 표시",
+      "Mark on Enqueue"
+    ],
+    "hints": [
+      "03 비선형 구조의 탐색(2)에 속하는 개념입니다.",
+      "시작 정점도 push 전에 표시."
+    ],
+    "basis": "lecture"
+  },
+  {
+    "id": "traversal-order",
+    "unitId": "reference",
+    "name": "탐색 순서의 기준",
+    "english": "Neighbor Order",
+    "summary": "방문 순서는 이웃을 확인하는 순서에 따라 달라진다.",
+    "detail": "행렬을 1..n 순회하면 번호 순, vector를 앞에서 순회하면 간선 입력 순서다.",
+    "conditions": "시작점·간선 방향·이웃 순서 모두 명시.",
+    "misconception": "DFS 순서는 그래프가 정해지면 유일하다.",
+    "correction": "같은 그래프라도 이웃 순서가 달라지면 방문 순서가 달라진다.",
+    "importance": "Essential",
+    "sources": [
+      {
+        "sourceId": "reference",
+        "page": 8
+      }
+    ],
+    "related": [
+      "dfs-recursive",
+      "dfs-stack",
+      "bfs-mark"
+    ],
+    "keywords": [
+      "탐색 순서의 기준",
+      "Neighbor Order"
+    ],
+    "hints": [
+      "프로그래밍Ⅰ 참고자료에 속하는 개념입니다.",
+      "시작점·간선 방향·이웃 순서 모두 명시."
+    ],
+    "basis": "reference"
+  },
+  {
+    "id": "components",
+    "unitId": "bfs",
+    "name": "연결 요소",
+    "english": "Connected Components",
+    "summary": "서로 도달 가능한 정점 또는 칸의 묶음.",
+    "detail": "전체를 순회하며 아직 표시되지 않은 칸에서 탐색을 시작할 때마다 요소 수를 1 증가한다.",
+    "conditions": "무방향 또는 격자 4방향 연결.",
+    "misconception": "모든 1의 개수가 영역 개수이다.",
+    "correction": "붙어 있는 여러 칸은 한 영역이다. 시작 횟수와 방문 칸 수를 구분한다.",
+    "importance": "Essential",
+    "sources": [
+      {
+        "sourceId": "bfs",
+        "page": 6
+      }
+    ],
+    "related": [
+      "grid-safe",
+      "grid-label",
+      "maze-graph"
+    ],
+    "keywords": [
+      "연결 요소",
+      "Connected Components"
+    ],
+    "hints": [
+      "03 비선형 구조의 탐색(3)에 속하는 개념입니다.",
+      "무방향 또는 격자 4방향 연결."
+    ],
+    "basis": "lecture"
+  },
+  {
+    "id": "grid-safe",
+    "unitId": "bfs",
+    "name": "격자 경계 검사",
+    "english": "Grid Bounds",
+    "summary": "0<=r<n, 0<=c<n을 먼저 확인한다.",
+    "detail": "safe(nr,nc) && A[nr][nc]==1 순서로 단락 평가를 이용한다.",
+    "conditions": "0 기반 n×n 격자.",
+    "misconception": "배열을 읽은 후 경계를 확인해도 된다.",
+    "correction": "읽기 자체가 범위를 벗어나면 이미 잘못이다. 안전 조건을 왼쪽에 둔다.",
+    "importance": "Essential",
+    "sources": [
+      {
+        "sourceId": "bfs",
+        "page": 5
+      }
+    ],
+    "related": [
+      "components",
+      "grid-label",
+      "maze-graph"
+    ],
+    "keywords": [
+      "격자 경계 검사",
+      "Grid Bounds"
+    ],
+    "hints": [
+      "03 비선형 구조의 탐색(3)에 속하는 개념입니다.",
+      "0 기반 n×n 격자."
+    ],
+    "basis": "lecture"
+  },
+  {
+    "id": "grid-label",
+    "unitId": "bfs",
+    "name": "영역 라벨링",
+    "english": "Flood Fill Labeling",
+    "summary": "방문한 1을 영역별 2,3,4,…로 바꾼다.",
+    "detail": "첫 영역 라벨 2는 area[0]에 대응한다. area[label-2]를 증가시키고 크기를 내림차순 정렬한다.",
+    "conditions": "자료의 1=굴, 0=빈칸. 상하좌우만 연결.",
+    "misconception": "대각선 1도 같은 굴이다.",
+    "correction": "이 자료는 4방향 인접이다. 대각선 연결을 추가하면 다른 문제가 된다.",
+    "importance": "Essential",
+    "sources": [
+      {
+        "sourceId": "bfs",
+        "page": 7
+      }
+    ],
+    "related": [
+      "components",
+      "grid-safe",
+      "maze-graph"
+    ],
+    "keywords": [
+      "영역 라벨링",
+      "Flood Fill Labeling"
+    ],
+    "hints": [
+      "03 비선형 구조의 탐색(3)에 속하는 개념입니다.",
+      "자료의 1=굴, 0=빈칸. 상하좌우만 연결."
+    ],
+    "basis": "lecture"
+  },
+  {
+    "id": "maze-graph",
+    "unitId": "reference",
+    "name": "미로의 그래프화",
+    "english": "Maze to Graph",
+    "summary": "통로에만 번호를 부여하고 이웃 통로를 간선으로 연결한다.",
+    "detail": "행 우선으로 통로 0에 id를 매기며 cnt×cnt 행렬을 출력한다.",
+    "conditions": "참고자료에서 통로=0, 벽=1, n<=5.",
+    "misconception": "굴 문제와 똑같이 1을 통로로 보면 된다.",
+    "correction": "같은 0/1 격자라도 의미가 다르다. 입력 정의를 먼저 확인한다.",
+    "importance": "Essential",
+    "sources": [
+      {
+        "sourceId": "reference",
+        "page": 6
+      }
+    ],
+    "related": [
+      "components",
+      "grid-safe",
+      "grid-label"
+    ],
+    "keywords": [
+      "미로의 그래프화",
+      "Maze to Graph"
+    ],
+    "hints": [
+      "프로그래밍Ⅰ 참고자료에 속하는 개념입니다.",
+      "참고자료에서 통로=0, 벽=1, n<=5."
+    ],
+    "basis": "reference"
+  },
+  {
+    "id": "induction",
+    "unitId": "relation-1",
+    "name": "수학적 귀납법",
+    "english": "Mathematical Induction",
+    "summary": "기초 명제를 보이고 P(k)에서 P(k+1)을 유도한다.",
+    "detail": "재귀 설계도 작은 입력의 해를 가정하고 큰 입력의 해를 구성한다.",
+    "conditions": "기초 조건과 귀납 단계가 모두 필요.",
+    "misconception": "작은 몇 값만 맞으면 모든 n에서 증명된다.",
+    "correction": "유한 예시 확인은 증명이 아니다. 일반 귀납 단계를 보여야 한다.",
+    "importance": "Essential",
+    "sources": [
+      {
+        "sourceId": "relation-1",
+        "page": 9
+      }
+    ],
+    "related": [
+      "state",
+      "base-case",
+      "sum-linear",
+      "sum-half"
+    ],
+    "keywords": [
+      "수학적 귀납법",
+      "Mathematical Induction"
+    ],
+    "hints": [
+      "chap1 · 수학적 귀납법과 점화식에 속하는 개념입니다.",
+      "기초 조건과 귀납 단계가 모두 필요."
+    ],
+    "basis": "lecture"
+  },
+  {
+    "id": "state",
+    "unitId": "relation-1",
+    "name": "상태와 관계 기반 설계",
+    "english": "State Definition",
+    "summary": "함수의 매개변수와 반환값이 의미하는 문제를 정의한다.",
+    "detail": "상태가 같으면 답이 같아야 하며 이후 선택에 필요한 정보가 상태 안에 있어야 한다.",
+    "conditions": "초기 조건·상태 범위·전이 명시.",
+    "misconception": "f(n,k)라는 이름만 있으면 상태 정의가 끝난다.",
+    "correction": "n,k의 의미와 반환값의 의미를 말해야 점화식을 검증할 수 있다.",
+    "importance": "Essential",
+    "sources": [
+      {
+        "sourceId": "relation-1",
+        "page": 8
+      }
+    ],
+    "related": [
+      "induction",
+      "base-case",
+      "sum-linear",
+      "sum-half"
+    ],
+    "keywords": [
+      "상태와 관계 기반 설계",
+      "State Definition"
+    ],
+    "hints": [
+      "chap1 · 수학적 귀납법과 점화식에 속하는 개념입니다.",
+      "초기 조건·상태 범위·전이 명시."
+    ],
+    "basis": "lecture"
+  },
+  {
+    "id": "base-case",
+    "unitId": "relation-1",
+    "name": "재귀 종료 조건",
+    "english": "Base Case",
+    "summary": "직접 답을 아는 가장 작은 상태에서 재귀를 멈춘다.",
+    "detail": "모든 호출이 종료 조건으로 접근해야 한다. 입력 0 허용 여부에 따라 종료 조건도 바뀐다.",
+    "conditions": "매 호출에서 감소하는 비음수 척도 존재.",
+    "misconception": "종료 조건만 쓰면 무한 재귀가 사라진다.",
+    "correction": "상태가 줄지 않거나 종료 조건을 건너뛰면 여전히 끝나지 않는다.",
+    "importance": "Essential",
+    "sources": [
+      {
+        "sourceId": "relation-1",
+        "page": 10
+      }
+    ],
+    "related": [
+      "induction",
+      "state",
+      "sum-linear",
+      "sum-half"
+    ],
+    "keywords": [
+      "재귀 종료 조건",
+      "Base Case"
+    ],
+    "hints": [
+      "chap1 · 수학적 귀납법과 점화식에 속하는 개념입니다.",
+      "매 호출에서 감소하는 비음수 척도 존재."
+    ],
+    "basis": "lecture"
+  },
+  {
+    "id": "sum-linear",
+    "unitId": "relation-1",
+    "name": "합의 선형 점화식",
+    "english": "Linear Sum Recurrence",
+    "summary": "S(1)=1, S(n)=S(n-1)+n.",
+    "detail": "재귀 깊이 Θ(n), 계산량 Θ(n). 반복문은 같은 계산을 O(1) 보조 공간으로 처리한다.",
+    "conditions": "n>=1, 충분한 정수 범위.",
+    "misconception": "long long 반환형이면 int 곱셈도 자동으로 안전하다.",
+    "correction": "곱셈 피연산자부터 넓은 형으로 바꾸어야 중간 오버플로를 막는다.",
+    "importance": "Essential",
+    "sources": [
+      {
+        "sourceId": "relation-1",
+        "page": 10
+      }
+    ],
+    "related": [
+      "induction",
+      "state",
+      "base-case",
+      "sum-half"
+    ],
+    "keywords": [
+      "합의 선형 점화식",
+      "Linear Sum Recurrence"
+    ],
+    "hints": [
+      "chap1 · 수학적 귀납법과 점화식에 속하는 개념입니다.",
+      "n>=1, 충분한 정수 범위."
+    ],
+    "basis": "lecture"
+  },
+  {
+    "id": "sum-half",
+    "unitId": "relation-1",
+    "name": "합의 절반 점화식",
+    "english": "Halving Sum Recurrence",
+    "summary": "S(n)=2S(n/2)+((n+1)/2)², 정수 나눗셈.",
+    "detail": "S(n/2)를 한 번 계산하고 2를 곱하면 시간과 깊이 Θ(log n). 수업 기본값 S(1)=1.",
+    "conditions": "n>=1, 정수 나눗셈, 64비트 연산.",
+    "misconception": "재귀 호출이 2배니까 항상 O(n)이다.",
+    "correction": "2*f(n/2)는 호출 1회다. f(n/2)+f(n/2)는 호출 2회여서 다르다.",
+    "importance": "Essential",
+    "sources": [
+      {
+        "sourceId": "relation-1",
+        "page": 13
+      }
+    ],
+    "related": [
+      "induction",
+      "state",
+      "base-case",
+      "sum-linear"
+    ],
+    "keywords": [
+      "합의 절반 점화식",
+      "Halving Sum Recurrence"
+    ],
+    "hints": [
+      "chap1 · 수학적 귀납법과 점화식에 속하는 개념입니다.",
+      "n>=1, 정수 나눗셈, 64비트 연산."
+    ],
+    "basis": "lecture"
+  },
+  {
+    "id": "base-conversion",
+    "unitId": "relation-1",
+    "name": "재귀 진법 변환",
+    "english": "Recursive Base Conversion",
+    "summary": "몫 n/k를 먼저 출력한 뒤 나머지 n%k를 출력한다.",
+    "detail": "n<k에서 한 자릿수를 출력한다. 0도 출력하고 10..19는 A..J 등 자릿수 기호로 대응한다.",
+    "conditions": "0<=n<=100000, 2<=k<=20. 앱은 0..9,A..J 사용.",
+    "misconception": "나머지를 먼저 출력하면 원래 순서이다.",
+    "correction": "낮은 자릿수부터 나오므로 역순이다. 재귀 호출을 먼저 수행한다.",
+    "importance": "Essential",
+    "sources": [
+      {
+        "sourceId": "relation-1",
+        "page": 16
+      }
+    ],
+    "related": [
+      "reverse",
+      "reverse-width",
+      "stars"
+    ],
+    "keywords": [
+      "재귀 진법 변환",
+      "Recursive Base Conversion"
+    ],
+    "hints": [
+      "chap1 · 수학적 귀납법과 점화식에 속하는 개념입니다.",
+      "0<=n<=100000, 2<=k<=20. 앱은 0..9,A..J 사용."
+    ],
+    "basis": "lecture"
+  },
+  {
+    "id": "reverse",
+    "unitId": "relation-2",
+    "name": "숫자 뒤집기",
+    "english": "Digit Reversal",
+    "summary": "일의 자리부터 출력하되 앞에 오는 0만 생략한다.",
+    "detail": "반복 누적값 r=10*r+n%10을 쓰면 유효 숫자만 남고 내부 0은 유지된다.",
+    "conditions": "수업 기본 1..50000. 0 확장은 별도 처리.",
+    "misconception": "모든 0을 생략하면 된다.",
+    "correction": "1002의 역순은 2001이다. 내부 0은 삭제하면 안 된다.",
+    "importance": "Essential",
+    "sources": [
+      {
+        "sourceId": "relation-2",
+        "page": 3
+      }
+    ],
+    "related": [
+      "reverse-width",
+      "base-conversion",
+      "stars"
+    ],
+    "keywords": [
+      "숫자 뒤집기",
+      "Digit Reversal"
+    ],
+    "hints": [
+      "chap2 · 수학적 귀납법과 점화식에 속하는 개념입니다.",
+      "수업 기본 1..50000. 0 확장은 별도 처리."
+    ],
+    "basis": "lecture"
+  },
+  {
+    "id": "reverse-width",
+    "unitId": "relation-2",
+    "name": "숫자 뒤집기의 자리수 오류",
+    "english": "Width Loss in Recursion",
+    "summary": "양 끝을 제거한 내부 수는 원래 폭을 잃을 수 있다.",
+    "detail": "1010의 내부 01이 숫자 1이 되어 f(1)=1로 계산된다. 원래 자리 폭을 상태에 추가해야 한다.",
+    "conditions": "자료에 오류!로 제시된 전략 #3.",
+    "misconception": "내부 수의 자릿수만 알면 원래 폭을 복구한다.",
+    "correction": "선행 0은 숫자 값만으로 복구할 수 없다. 폭을 전달하거나 누적 방식으로 바꾼다.",
+    "importance": "Essential",
+    "sources": [
+      {
+        "sourceId": "relation-2",
+        "page": 5
+      }
+    ],
+    "related": [
+      "reverse",
+      "base-conversion",
+      "stars"
+    ],
+    "keywords": [
+      "숫자 뒤집기의 자리수 오류",
+      "Width Loss in Recursion"
+    ],
+    "hints": [
+      "chap2 · 수학적 귀납법과 점화식에 속하는 개념입니다.",
+      "자료에 오류!로 제시된 전략 #3."
+    ],
+    "basis": "lecture"
+  },
+  {
+    "id": "stars",
+    "unitId": "relation-2",
+    "name": "별 삼각형과 출력 순서",
+    "english": "Recursive Star Triangle",
+    "summary": "먼저 n-1행을 출력한 뒤 n개의 별을 출력한다.",
+    "detail": "총 별 수 n(n+1)/2이므로 출력량 자체가 Θ(n²). 문자열로 줄 단위 출력해도 출력량은 같고 호출 오버헤드를 줄인다.",
+    "conditions": "1<=n<=10000; 응용 과제는 반복문 제한.",
+    "misconception": "한 번의 printf로 각 줄을 출력하면 O(n)이다.",
+    "correction": "출력되는 문자 수를 세면 Θ(n²)이다. 함수 호출 수와 출력량은 다르다.",
+    "importance": "Important",
+    "sources": [
+      {
+        "sourceId": "relation-2",
+        "page": 8
+      }
+    ],
+    "related": [
+      "reverse",
+      "reverse-width",
+      "base-conversion"
+    ],
+    "keywords": [
+      "별 삼각형과 출력 순서",
+      "Recursive Star Triangle"
+    ],
+    "hints": [
+      "chap2 · 수학적 귀납법과 점화식에 속하는 개념입니다.",
+      "1<=n<=10000; 응용 과제는 반복문 제한."
+    ],
+    "basis": "lecture"
+  },
+  {
+    "id": "combination",
+    "unitId": "relation-3",
+    "name": "조합의 점화식",
+    "english": "Pascal Recurrence",
+    "summary": "C(n,k)=C(n-1,k-1)+C(n-1,k).",
+    "detail": "마지막 물건을 고르거나 안 고르는 서로 겹치지 않는 두 경우로 나눈다. 수업은 k=1,n=k를 기초로 둔다.",
+    "conditions": "1<=k<=n; 보충으로 C(n,0)=1, 범위 밖=0.",
+    "misconception": "두 항은 같은 경우를 중복해서 센다.",
+    "correction": "마지막 물건의 선택 여부가 달라 서로 겹치지 않으며 전체를 덮는다.",
+    "importance": "Essential",
+    "sources": [
+      {
+        "sourceId": "relation-3",
+        "page": 4
+      }
+    ],
+    "related": [
+      "comb-overflow",
+      "comb-dp",
+      "backtrack"
+    ],
+    "keywords": [
+      "조합의 점화식",
+      "Pascal Recurrence"
+    ],
+    "hints": [
+      "chap3 · 수학적 귀납법과 점화식에 속하는 개념입니다.",
+      "1<=k<=n; 보충으로 C(n,0)=1, 범위 밖=0."
+    ],
+    "basis": "lecture"
+  },
+  {
+    "id": "comb-overflow",
+    "unitId": "relation-3",
+    "name": "조합의 중간값 오버플로",
+    "english": "Intermediate Overflow",
+    "summary": "최종 답이 들어가도 곱셈 중간값은 넘칠 수 있다.",
+    "detail": "곱셈을 나눗셈 앞에 두면 커지고, 정수 나눗셈을 먼저 하면 잘린다. 부동소수점은 오차가 있다.",
+    "conditions": "수업은 계산 순서·형 변환의 한계를 비교.",
+    "misconception": "double로 바꾸면 모든 조합을 정확하게 계산한다.",
+    "correction": "큰 정수는 double로 정확히 표현되지 않을 수 있다. 정수 DP나 약분·큰 정수 등을 조건에 맞게 사용한다.",
+    "importance": "Essential",
+    "sources": [
+      {
+        "sourceId": "relation-3",
+        "page": 6
+      }
+    ],
+    "related": [
+      "combination",
+      "comb-dp",
+      "backtrack"
+    ],
+    "keywords": [
+      "조합의 중간값 오버플로",
+      "Intermediate Overflow"
+    ],
+    "hints": [
+      "chap3 · 수학적 귀납법과 점화식에 속하는 개념입니다.",
+      "수업은 계산 순서·형 변환의 한계를 비교."
+    ],
+    "basis": "lecture"
+  },
+  {
+    "id": "tiling",
+    "unitId": "relation-3",
+    "name": "2×n 타일 채우기",
+    "english": "Tiling Recurrence",
+    "summary": "T(0)=T(1)=1, T(n)=T(n-1)+2T(n-2).",
+    "detail": "세로 2×1 하나, 가로 2×1 두 개, 2×2 하나로 끝을 분류한다. 각 갱신마다 m으로 나눈다.",
+    "conditions": "회전 가능한 2×1과 2×2 타일.",
+    "misconception": "T(0)=0이다.",
+    "correction": "빈 판을 채우는 방법은 아무것도 놓지 않는 한 가지다. T(2)=3을 얻는다.",
+    "importance": "Essential",
+    "sources": [
+      {
+        "sourceId": "relation-3",
+        "page": 9
+      }
+    ],
+    "related": [
+      "tile-split",
+      "divide"
+    ],
+    "keywords": [
+      "2×n 타일 채우기",
+      "Tiling Recurrence"
+    ],
+    "hints": [
+      "chap3 · 수학적 귀납법과 점화식에 속하는 개념입니다.",
+      "회전 가능한 2×1과 2×2 타일."
+    ],
+    "basis": "lecture"
+  },
+  {
+    "id": "tile-split",
+    "unitId": "relation-3",
+    "name": "타일의 분할 관계식",
+    "english": "Divide Tiling",
+    "summary": "T(2q)=T(q)²+2T(q-1)².",
+    "detail": "홀수는 T(2q+1)=T(q)T(q+1)+2T(q-1)T(q). 기초 n=0,1,2를 먼저 처리해 음수 상태를 막는다.",
+    "conditions": "q>=1; 곱셈 전에 64비트 형과 모듈러 적용.",
+    "misconception": "같은 작은 상태를 매번 호출해도 자동으로 한 번만 계산한다.",
+    "correction": "수학 식만 바꿔도 중복 호출은 남을 수 있다. 지역 변수나 메모이제이션으로 재사용한다.",
+    "importance": "Essential",
+    "sources": [
+      {
+        "sourceId": "relation-3",
+        "page": 10
+      }
+    ],
+    "related": [
+      "tiling",
+      "divide"
+    ],
+    "keywords": [
+      "타일의 분할 관계식",
+      "Divide Tiling"
+    ],
+    "hints": [
+      "chap3 · 수학적 귀납법과 점화식에 속하는 개념입니다.",
+      "q>=1; 곱셈 전에 64비트 형과 모듈러 적용."
+    ],
+    "basis": "lecture"
+  },
+  {
+    "id": "divide",
+    "unitId": "relation-4",
+    "name": "분할 정복",
+    "english": "Divide and Conquer",
+    "summary": "같은 성질의 부분 문제로 나누고 답을 결합한다.",
+    "detail": "분할, 부분 문제 해결, 결합과 직접 해결 가능한 기초 상태를 정의한다.",
+    "conditions": "부분 문제 크기가 작아져야 한다.",
+    "misconception": "부분 문제를 나누기만 하면 정답이다.",
+    "correction": "부분 해를 원문제 해로 결합하는 정당성도 필요하다.",
+    "importance": "Essential",
+    "sources": [
+      {
+        "sourceId": "relation-4",
+        "page": 2
+      }
+    ],
+    "related": [
+      "tiling",
+      "tile-split"
+    ],
+    "keywords": [
+      "분할 정복",
+      "Divide and Conquer"
+    ],
+    "hints": [
+      "chap4 · 분할 정복에 속하는 개념입니다.",
+      "부분 문제 크기가 작아져야 한다."
+    ],
+    "basis": "lecture"
+  },
+  {
+    "id": "node-distance",
+    "unitId": "relation-4",
+    "name": "완전이진트리 노드 거리",
+    "english": "Heap-indexed Tree Distance",
+    "summary": "a=b이면 0, 큰 번호를 /2로 올리며 거리를 센다.",
+    "detail": "루트 1, 부모 x/2인 번호 체계에서는 큰 번호를 계속 올려 공통 조상에서 만난다. 시간 O(log max(a,b)).",
+    "conditions": "레벨 순서 번호, 양의 정수, 부모=floor(x/2).",
+    "misconception": "임의의 트리 번호에도 x/2가 부모이다.",
+    "correction": "번호 규칙이 없으면 사용할 수 없다. 원본의 완전이진트리 정의 문장은 표준 정의보다 강하다.",
+    "importance": "Essential",
+    "sources": [
+      {
+        "sourceId": "relation-4",
+        "page": 4
+      }
+    ],
+    "related": [
+      "tree",
+      "tree-terms",
+      "depth-height"
+    ],
+    "keywords": [
+      "완전이진트리 노드 거리",
+      "Heap-indexed Tree Distance"
+    ],
+    "hints": [
+      "chap4 · 분할 정복에 속하는 개념입니다.",
+      "레벨 순서 번호, 양의 정수, 부모=floor(x/2)."
+    ],
+    "basis": "lecture"
+  },
+  {
+    "id": "paper",
+    "unitId": "relation-4",
+    "name": "영역 구분의 4분할",
+    "english": "Quadtree-style Paper Division",
+    "summary": "현재 정사각형이 한 색이면 세고, 아니면 4분할한다.",
+    "detail": "a,b,n 상태로 네 좌상단 좌표를 정한다. 원하는 색만 세면 다른 단색 영역은 0을 반환하고 멈춘다.",
+    "conditions": "n은 2의 거듭제곱, 색 0/1.",
+    "misconception": "원하는 색이 아니면 계속 나눠야 한다.",
+    "correction": "다른 색으로만 이루어진 영역은 기여도 0으로 종료해야 n=0 재귀를 막는다.",
+    "importance": "Essential",
+    "sources": [
+      {
+        "sourceId": "relation-4",
+        "page": 7
+      }
+    ],
+    "related": [
+      "encode",
+      "decode"
+    ],
+    "keywords": [
+      "영역 구분의 4분할",
+      "Quadtree-style Paper Division"
+    ],
+    "hints": [
+      "chap4 · 분할 정복에 속하는 개념입니다.",
+      "n은 2의 거듭제곱, 색 0/1."
+    ],
+    "basis": "lecture"
+  },
+  {
+    "id": "encode",
+    "unitId": "relation-4",
+    "name": "이진 암호",
+    "english": "Binary Run Divide Encoding",
+    "summary": "균일하면 0/1, 섞였으면 - 뒤에 왼쪽·오른쪽 암호를 출력한다.",
+    "detail": "길이를 반씩 나누고 전위 순서로 출력한다. 00111101은 --01-1-01이다.",
+    "conditions": "길이는 2의 거듭제곱, 알파벳 0/1.",
+    "misconception": "-는 단순 구분 문자여서 생략해도 된다.",
+    "correction": "-는 내부 분할 노드 표시다. 없으면 복원 구조가 사라진다.",
+    "importance": "Essential",
+    "sources": [
+      {
+        "sourceId": "relation-4",
+        "page": 10
+      }
+    ],
+    "related": [
+      "paper",
+      "decode"
+    ],
+    "keywords": [
+      "이진 암호",
+      "Binary Run Divide Encoding"
+    ],
+    "hints": [
+      "chap4 · 분할 정복에 속하는 개념입니다.",
+      "길이는 2의 거듭제곱, 알파벳 0/1."
+    ],
+    "basis": "lecture"
+  },
+  {
+    "id": "decode",
+    "unitId": "relation-4",
+    "name": "이진 복원",
+    "english": "Recursive Decoding",
+    "summary": "0/1이면 현재 영역을 채우고 -면 왼쪽·오른쪽을 재귀 복원한다.",
+    "detail": "입력 토큰 인덱스 하나를 모든 재귀 호출이 공유하며 호출될 때마다 하나씩 소비한다.",
+    "conditions": "원본 길이와 유효한 암호 입력 제공.",
+    "misconception": "각 호출에 인덱스를 값으로 넘겨도 자동 진행된다.",
+    "correction": "반환 위치를 전달하거나 참조/공유 인덱스를 사용해야 다음 토큰으로 진행한다.",
+    "importance": "Essential",
+    "sources": [
+      {
+        "sourceId": "relation-4",
+        "page": 12
+      }
+    ],
+    "related": [
+      "paper",
+      "encode"
+    ],
+    "keywords": [
+      "이진 복원",
+      "Recursive Decoding"
+    ],
+    "hints": [
+      "chap4 · 분할 정복에 속하는 개념입니다.",
+      "원본 길이와 유효한 암호 입력 제공."
+    ],
+    "basis": "lecture"
+  },
+  {
+    "id": "partition",
+    "unitId": "relation-5",
+    "name": "정수 분할의 상태",
+    "english": "Integer Partition State",
+    "summary": "P(n,k)는 k 이하 자연수의 합으로 n을 만드는 분할 수.",
+    "detail": "순서만 다른 합을 중복 계산하지 않는다. 열거 시 다음 수를 이전 수 이하로 제한한다.",
+    "conditions": "n>=0,k>=0, 양의 항만 허용.",
+    "misconception": "3+2와 2+3을 서로 다른 분할로 센다.",
+    "correction": "정수 분할은 순서를 무시한다. 수업 출력은 비증가 수열이다.",
+    "importance": "Essential",
+    "sources": [
+      {
+        "sourceId": "relation-5",
+        "page": 3
+      }
+    ],
+    "related": [
+      "partition-recur",
+      "dynamic"
+    ],
+    "keywords": [
+      "정수 분할의 상태",
+      "Integer Partition State"
+    ],
+    "hints": [
+      "chap5 · 동적표를 이용한 알고리즘 설계에 속하는 개념입니다.",
+      "n>=0,k>=0, 양의 항만 허용."
+    ],
+    "basis": "lecture"
+  },
+  {
+    "id": "partition-recur",
+    "unitId": "relation-5",
+    "name": "정수 분할의 두 갈래 점화식",
+    "english": "Partition Recurrence",
+    "summary": "P(n,k)=P(n,k-1)+P(n-k,k), n>=k.",
+    "detail": "k를 안 쓰는 경우와 적어도 하나 쓰는 경우다. n<k이면 P(n,k-1), P(0,k)=1, P(n,0)=0(n>0).",
+    "conditions": "상태 범위에 따른 초기 조건 필수.",
+    "misconception": "P(n-k,k-1)로 바꾸어도 같다.",
+    "correction": "k를 한 번 더 쓸 수 없게 되어 서로 다른 항의 분할을 세게 된다.",
+    "importance": "Essential",
+    "sources": [
+      {
+        "sourceId": "relation-5",
+        "page": 6
+      }
+    ],
+    "related": [
+      "partition",
+      "dynamic"
+    ],
+    "keywords": [
+      "정수 분할의 두 갈래 점화식",
+      "Partition Recurrence"
+    ],
+    "hints": [
+      "chap5 · 동적표를 이용한 알고리즘 설계에 속하는 개념입니다.",
+      "상태 범위에 따른 초기 조건 필수."
+    ],
+    "basis": "lecture"
+  },
+  {
+    "id": "dynamic",
+    "unitId": "relation-5",
+    "name": "동적표",
+    "english": "Dynamic Table",
+    "summary": "작은 상태의 값을 저장해 다른 상태 계산에 재사용한다.",
+    "detail": "중복 부분 문제의 반복 계산을 줄인다. 시간은 상태 수×상태당 전이 수로 분석한다.",
+    "conditions": "상태 정의와 의존 관계가 일관됨.",
+    "misconception": "표를 만들면 어떤 문제든 빨라진다.",
+    "correction": "숫자 뒤집기처럼 중복 호출이 없으면 저장 비용만 늘 수 있다.",
+    "importance": "Essential",
+    "sources": [
+      {
+        "sourceId": "relation-5",
+        "page": 7
+      }
+    ],
+    "related": [
+      "partition",
+      "partition-recur",
+      "minimum-steps",
+      "ore"
+    ],
+    "keywords": [
+      "동적표",
+      "Dynamic Table"
+    ],
+    "hints": [
+      "chap5 · 동적표를 이용한 알고리즘 설계에 속하는 개념입니다.",
+      "상태 정의와 의존 관계가 일관됨."
+    ],
+    "basis": "lecture"
+  },
+  {
+    "id": "memo",
+    "unitId": "relation-5",
+    "name": "메모이제이션",
+    "english": "Memoization",
+    "summary": "한 번 계산한 상태의 답을 저장하고 재사용한다.",
+    "detail": "0이 유효한 결과면 DT[n]==0을 미계산 판정으로 쓰지 말고 seen 배열이나 별도 값을 둔다.",
+    "conditions": "같은 상태의 정답이 호출 경로와 독립.",
+    "misconception": "0으로 초기화하면 모든 문제의 캐시 판정이 해결된다.",
+    "correction": "모듈러 결과나 경우의 수가 0일 수 있으므로 미계산과 계산된 0을 구분한다.",
+    "importance": "Essential",
+    "sources": [
+      {
+        "sourceId": "relation-5",
+        "page": 8
+      }
+    ],
+    "related": [
+      "fibonacci",
+      "topdown",
+      "bottomup",
+      "dynamic-backtrack"
+    ],
+    "keywords": [
+      "메모이제이션",
+      "Memoization"
+    ],
+    "hints": [
+      "chap5 · 동적표를 이용한 알고리즘 설계에 속하는 개념입니다.",
+      "같은 상태의 정답이 호출 경로와 독립."
+    ],
+    "basis": "lecture"
+  },
+  {
+    "id": "fibonacci",
+    "unitId": "relation-5",
+    "name": "피보나치와 중복 호출",
+    "english": "Fibonacci",
+    "summary": "F(1)=F(2)=1, F(n)=F(n-1)+F(n-2).",
+    "detail": "단순 재귀는 중복 호출로 지수 시간, 메모/반복 DP는 O(n)이다. 수업은 mod 100009를 사용한다.",
+    "conditions": "수업 n>=1, 기초 1·2.",
+    "misconception": "자료의 n<=2를 모든 음수까지 수학 정의로 확장한다.",
+    "correction": "그 조건은 주어진 양의 입력에 대한 구현 축약이다. 입력 범위를 함께 봐야 한다.",
+    "importance": "Essential",
+    "sources": [
+      {
+        "sourceId": "relation-5",
+        "page": 8
+      }
+    ],
+    "related": [
+      "memo",
+      "topdown",
+      "bottomup",
+      "dynamic-backtrack"
+    ],
+    "keywords": [
+      "피보나치와 중복 호출",
+      "Fibonacci"
+    ],
+    "hints": [
+      "chap5 · 동적표를 이용한 알고리즘 설계에 속하는 개념입니다.",
+      "수업 n>=1, 기초 1·2."
+    ],
+    "basis": "lecture"
+  },
+  {
+    "id": "topdown",
+    "unitId": "relation-5",
+    "name": "하향식 설계",
+    "english": "Top-down Design",
+    "summary": "구하려는 큰 상태에서 필요한 작은 상태를 호출한다.",
+    "detail": "메모이제이션을 붙이면 도달하는 상태를 한 번씩 계산한다. 호출 스택 사용량도 고려한다.",
+    "conditions": "기초 상태로 가는 의존 관계.",
+    "misconception": "하향식은 반드시 메모이제이션을 쓴다.",
+    "correction": "하향식 재귀와 메모이제이션은 별개다. 수업은 적용 전후를 비교한다.",
+    "importance": "Essential",
+    "sources": [
+      {
+        "sourceId": "relation-5",
+        "page": 10
+      }
+    ],
+    "related": [
+      "memo",
+      "fibonacci",
+      "bottomup",
+      "dynamic-backtrack"
+    ],
+    "keywords": [
+      "하향식 설계",
+      "Top-down Design"
+    ],
+    "hints": [
+      "chap5 · 동적표를 이용한 알고리즘 설계에 속하는 개념입니다.",
+      "기초 상태로 가는 의존 관계."
+    ],
+    "basis": "lecture"
+  },
+  {
+    "id": "bottomup",
+    "unitId": "relation-5",
+    "name": "상향식 설계",
+    "english": "Bottom-up Design",
+    "summary": "의존하는 상태가 먼저 준비되도록 표를 채운다.",
+    "detail": "반복문을 쓴다는 사실보다 계산 의존 순서가 중요하다. 원본의 k+f(k+1) 예시는 반환 때 큰 k부터 합쳐진다.",
+    "conditions": "점화식에 맞는 순회 순서.",
+    "misconception": "매개변수 증가 방향만 보면 상향식 여부가 결정된다.",
+    "correction": "호출 진행 방향과 값의 실제 결합 순서를 구별해야 한다.",
+    "importance": "Essential",
+    "sources": [
+      {
+        "sourceId": "relation-5",
+        "page": 11
+      }
+    ],
+    "related": [
+      "memo",
+      "fibonacci",
+      "topdown",
+      "dynamic-backtrack"
+    ],
+    "keywords": [
+      "상향식 설계",
+      "Bottom-up Design"
+    ],
+    "hints": [
+      "chap5 · 동적표를 이용한 알고리즘 설계에 속하는 개념입니다.",
+      "점화식에 맞는 순회 순서."
+    ],
+    "basis": "lecture"
+  },
+  {
+    "id": "comb-dp",
+    "unitId": "relation-5",
+    "name": "조합 DP",
+    "english": "Combination DP",
+    "summary": "행 n은 이전 행 n-1의 두 값을 더해 채운다.",
+    "detail": "C[i][0]=C[i][i]=1로 두고 i 증가 순서로 계산한다. 공간 압축 시 j를 감소시켜 이전 행을 보존한다.",
+    "conditions": "경계와 자료형·mod 지정.",
+    "misconception": "1차원 DP의 j 순서는 상관없다.",
+    "correction": "j 증가 순서는 이번 행의 갱신값을 재사용해 다른 값을 만든다.",
+    "importance": "Essential",
+    "sources": [
+      {
+        "sourceId": "relation-5",
+        "page": 13
+      }
+    ],
+    "related": [
+      "combination",
+      "comb-overflow",
+      "backtrack"
+    ],
+    "keywords": [
+      "조합 DP",
+      "Combination DP"
+    ],
+    "hints": [
+      "chap5 · 동적표를 이용한 알고리즘 설계에 속하는 개념입니다.",
+      "경계와 자료형·mod 지정."
+    ],
+    "basis": "lecture"
+  },
+  {
+    "id": "backtrack",
+    "unitId": "relation-5",
+    "name": "선택·미선택 백트래킹",
+    "english": "Choice Backtracking",
+    "summary": "f(i,k)는 i번째 물건을 결정하기 직전 k개를 고른 상태.",
+    "detail": "k=K는 성공 1, i=N이면서 k!=K는 실패 0. 다음 상태는 f(i+1,k+1), f(i+1,k)다.",
+    "conditions": "목표 N,K 고정, 순서 없는 선택 수 계산.",
+    "misconception": "i=N을 k=K보다 먼저 검사해 항상 0을 반환한다.",
+    "correction": "마지막 물건까지 골라 k=K가 된 성공을 놓친다. 성공 판정을 먼저 한다.",
+    "importance": "Essential",
+    "sources": [
+      {
+        "sourceId": "relation-5",
+        "page": 14
+      }
+    ],
+    "related": [
+      "combination",
+      "comb-overflow",
+      "comb-dp"
+    ],
+    "keywords": [
+      "선택·미선택 백트래킹",
+      "Choice Backtracking"
+    ],
+    "hints": [
+      "chap5 · 동적표를 이용한 알고리즘 설계에 속하는 개념입니다.",
+      "목표 N,K 고정, 순서 없는 선택 수 계산."
+    ],
+    "basis": "lecture"
+  },
+  {
+    "id": "dynamic-backtrack",
+    "unitId": "relation-5",
+    "name": "다이나미컬 백트래킹",
+    "english": "Memoized Backtracking",
+    "summary": "백트래킹 상태에 동적표를 붙여 중복 상태 계산을 줄인다.",
+    "detail": "수업의 용어는 메모이제이션을 붙인 상태 탐색을 가리킨다. 경로 누적값까지 답에 영향을 주면 상태에 포함하거나 반환 정의를 바꾼다.",
+    "conditions": "동일 상태의 미래 결과가 같음.",
+    "misconception": "어떤 누적값이든 i,k만 캐시하면 된다.",
+    "correction": "서로 다른 누적 조건에서 결과가 달라지면 상태 정보가 부족하다.",
+    "importance": "Essential",
+    "sources": [
+      {
+        "sourceId": "relation-5",
+        "page": 15
+      }
+    ],
+    "related": [
+      "memo",
+      "fibonacci",
+      "topdown",
+      "bottomup"
+    ],
+    "keywords": [
+      "다이나미컬 백트래킹",
+      "Memoized Backtracking"
+    ],
+    "hints": [
+      "chap5 · 동적표를 이용한 알고리즘 설계에 속하는 개념입니다.",
+      "동일 상태의 미래 결과가 같음."
+    ],
+    "basis": "lecture"
+  },
+  {
+    "id": "minimum-steps",
+    "unitId": "relation-6",
+    "name": "숙직 선생님 최소 단계",
+    "english": "Minimum Steps",
+    "summary": "D[a]=0, D[x]=1+min D[x-d]로 최소 이동 횟수를 구한다.",
+    "detail": "양의 세 이동 거리만 사용하며 x 증가 순서로 채운다. 도달 불가는 INF, 최종 도달 불가면 -1이다.",
+    "conditions": "1<=a<=b<=1000, 거리 1..100. 앞으로만 이동.",
+    "misconception": "방문하지 않은 상태를 0으로 두고 min을 취한다.",
+    "correction": "0이 최선으로 선택되어 가짜 경로를 만든다. 도달 불가는 INF를 쓴다.",
+    "importance": "Essential",
+    "sources": [
+      {
+        "sourceId": "relation-6",
+        "page": 4
+      }
+    ],
+    "related": [
+      "ore",
+      "dynamic"
+    ],
+    "keywords": [
+      "숙직 선생님 최소 단계",
+      "Minimum Steps"
+    ],
+    "hints": [
+      "chap6 · 동적표를 이용한 알고리즘 설계에 속하는 개념입니다.",
+      "1<=a<=b<=1000, 거리 1..100. 앞으로만 이동."
+    ],
+    "basis": "lecture"
+  },
+  {
+    "id": "ore",
+    "unitId": "relation-6",
+    "name": "광석 수집",
+    "english": "Maximum Grid Path Sum",
+    "summary": "D[r][c]=mine[r][c]+max(D[r-1][c],D[r][c-1]).",
+    "detail": "위·왼쪽에서 현재로 오는 최댓값을 합친다. 시작칸 포함, 첫 행·첫 열은 유일한 경로로 누적한다.",
+    "conditions": "오른쪽·아래만 이동, 광석 0/1, (1,1)→(n,m).",
+    "misconception": "DFS로 연결된 모든 광석을 합하면 된다.",
+    "correction": "한 경로에서 모을 수 있는 최대 개수이다. 서로 다른 경로의 광석을 동시에 합칠 수 없다.",
+    "importance": "Essential",
+    "sources": [
+      {
+        "sourceId": "relation-6",
+        "page": 6
+      }
+    ],
+    "related": [
+      "minimum-steps",
+      "dynamic"
+    ],
+    "keywords": [
+      "광석 수집",
+      "Maximum Grid Path Sum"
+    ],
+    "hints": [
+      "chap6 · 동적표를 이용한 알고리즘 설계에 속하는 개념입니다.",
+      "오른쪽·아래만 이동, 광석 0/1, (1,1)→(n,m)."
+    ],
+    "basis": "lecture"
+  }
+]

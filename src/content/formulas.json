@@ -1,0 +1,11 @@
+{
+  "frequency": "\\operatorname{count}(x)=\\operatorname{upper\\_bound}(x)-\\operatorname{lower\\_bound}(x)",
+  "sum-linear": "S(n)=S(n-1)+n,\\quad S(1)=1",
+  "sum-half": "S(n)=2S(\\lfloor n/2\\rfloor)+\\lceil n/2\\rceil^2,\\quad S(1)=1",
+  "combination": "\\binom nk=\\binom{n-1}{k-1}+\\binom{n-1}k,\\quad \\binom n0=\\binom nn=1",
+  "comb-dp": "C[i][j]=C[i-1][j-1]+C[i-1][j]",
+  "tiling": "T(n)=T(n-1)+2T(n-2),\\quad T(0)=T(1)=1",
+  "partition-recur": "P(n,k)=P(n,k-1)+P(n-k,k)\\quad(n\\ge k)",
+  "fibonacci": "F(n)=F(n-1)+F(n-2),\\quad F(0)=0,\\ F(1)=1",
+  "ore": "D[i][j]=\\max(D[i-1][j],D[i][j-1])+a[i][j]"
+}

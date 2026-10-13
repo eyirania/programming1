@@ -1,0 +1,10 @@
+export type Ref={sourceId:string;page:number};
+export type Concept={id:string;unitId:string;name:string;english:string;summary:string;detail:string;conditions:string;misconception:string;correction:string;importance:string;sources:Ref[];related:string[];keywords:string[];hints:string[];basis:string};
+export type CodeSource={filename:string;path:string;lineStart:number;lineEnd:number;note:string};
+export type Question={headerNotes?:string[];language?:string;codeSource?:CodeSource;id:string;unitId:string;conceptIds:string[];title:string;prompt:string;type:string;level:number;answer:string;explanation:string;sources:Ref[];origin:string;grading:string;rubric:string[];options:string[];code:string;verification:{status:string;method:string;reviewedAt?:string;actualOutput?:string}};
+export type Card={id:string;conceptId:string;type:string;front:string;back:string;why:string;importance:string;sources:Ref[]};
+export type CardReview={id:string;repetitions:number;successes:number;lapses:number;ease:number;interval:number;lastReviewed:number;due:number;rating:Rating};
+export type Rating='again'|'hard'|'good'|'easy';
+export type Attempt={id:string;questionId:string;answer:string;score:number|null;createdAt:number;mode:'practice'|'exam';examId?:string;category:string;resolved:boolean;criteria:boolean[]};
+export type ExamRun={id:string;questionIds:string[];answers:Record<string,string>;startedAt:number;deadline:number|null;submittedAt:number|null;status:'running'|'submitted';name:string;index:number};
+export type StudyData={schemaVersion:1;cardReviews:Record<string,CardReview>;attempts:Attempt[];completedConcepts:Record<string,boolean>;exams:ExamRun[];activeExamId:string|null};

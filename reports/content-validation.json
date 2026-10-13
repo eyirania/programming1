@@ -1,0 +1,512 @@
+{
+  "date": "2026-10-13",
+  "sources": 11,
+  "pages": 145,
+  "concepts": 66,
+  "flashcards": 156,
+  "questions": 150,
+  "levels": {
+    "1": 15,
+    "2": 23,
+    "3": 45,
+    "4": 45,
+    "5": 22
+  },
+  "codePrograms": 60,
+  "codeLanguages": {
+    "cpp": 20,
+    "c": 40
+  },
+  "codeResults": [
+    {
+      "id": "Q031",
+      "language": "cpp",
+      "passed": true,
+      "expected": "1 4 3",
+      "actual": "1 4 3",
+      "diagnostics": ""
+    },
+    {
+      "id": "Q032",
+      "language": "cpp",
+      "passed": true,
+      "expected": "3 3 0",
+      "actual": "3 3 0",
+      "diagnostics": ""
+    },
+    {
+      "id": "Q033",
+      "language": "cpp",
+      "passed": true,
+      "expected": "0 0 0",
+      "actual": "0 0 0",
+      "diagnostics": ""
+    },
+    {
+      "id": "Q034",
+      "language": "cpp",
+      "passed": true,
+      "expected": "2 2 0",
+      "actual": "2 2 0",
+      "diagnostics": ""
+    },
+    {
+      "id": "Q035",
+      "language": "cpp",
+      "passed": true,
+      "expected": "0 0 0",
+      "actual": "0 0 0",
+      "diagnostics": ""
+    },
+    {
+      "id": "Q036",
+      "language": "c",
+      "passed": true,
+      "expected": "2 3 3",
+      "actual": "2 3 3",
+      "diagnostics": ""
+    },
+    {
+      "id": "Q037",
+      "language": "c",
+      "passed": true,
+      "expected": "1 2 -1",
+      "actual": "1 2 -1",
+      "diagnostics": ""
+    },
+    {
+      "id": "Q038",
+      "language": "c",
+      "passed": true,
+      "expected": "2 1 3 4",
+      "actual": "2 1 3 4",
+      "diagnostics": ""
+    },
+    {
+      "id": "Q039",
+      "language": "c",
+      "passed": true,
+      "expected": "3 2 1 4 5",
+      "actual": "3 2 1 4 5",
+      "diagnostics": ""
+    },
+    {
+      "id": "Q040",
+      "language": "c",
+      "passed": true,
+      "expected": "1 1 2 3 4",
+      "actual": "1 1 2 3 4",
+      "diagnostics": ""
+    },
+    {
+      "id": "Q041",
+      "language": "cpp",
+      "passed": true,
+      "expected": "9 1 4 7 2",
+      "actual": "9 1 4 7 2",
+      "diagnostics": ""
+    },
+    {
+      "id": "Q042",
+      "language": "cpp",
+      "passed": true,
+      "expected": "9 7 4 1 2",
+      "actual": "9 7 4 1 2",
+      "diagnostics": ""
+    },
+    {
+      "id": "Q043",
+      "language": "cpp",
+      "passed": true,
+      "expected": "8 2",
+      "actual": "8 2",
+      "diagnostics": ""
+    },
+    {
+      "id": "Q044",
+      "language": "cpp",
+      "passed": true,
+      "expected": "5 8",
+      "actual": "5 8",
+      "diagnostics": ""
+    },
+    {
+      "id": "Q045",
+      "language": "c",
+      "passed": true,
+      "expected": "1 2 4 3",
+      "actual": "1 2 4 3",
+      "diagnostics": ""
+    },
+    {
+      "id": "Q046",
+      "language": "cpp",
+      "passed": true,
+      "expected": "1 2 3 4",
+      "actual": "1 2 3 4",
+      "diagnostics": ""
+    },
+    {
+      "id": "Q047",
+      "language": "cpp",
+      "passed": true,
+      "expected": "1 3 4 2",
+      "actual": "1 3 4 2",
+      "diagnostics": ""
+    },
+    {
+      "id": "Q048",
+      "language": "cpp",
+      "passed": true,
+      "expected": "1 3 2 4",
+      "actual": "1 3 2 4",
+      "diagnostics": ""
+    },
+    {
+      "id": "Q049",
+      "language": "c",
+      "passed": true,
+      "expected": "1 2",
+      "actual": "1 2",
+      "diagnostics": ""
+    },
+    {
+      "id": "Q050",
+      "language": "cpp",
+      "passed": true,
+      "expected": "3 1 1 1",
+      "actual": "3 1 1 1",
+      "diagnostics": ""
+    },
+    {
+      "id": "Q051",
+      "language": "cpp",
+      "passed": true,
+      "expected": "3 3 1 1",
+      "actual": "3 3 1 1",
+      "diagnostics": ""
+    },
+    {
+      "id": "Q052",
+      "language": "cpp",
+      "passed": true,
+      "expected": "0",
+      "actual": "0",
+      "diagnostics": ""
+    },
+    {
+      "id": "Q053",
+      "language": "cpp",
+      "passed": true,
+      "expected": "1 4",
+      "actual": "1 4",
+      "diagnostics": ""
+    },
+    {
+      "id": "Q054",
+      "language": "c",
+      "passed": true,
+      "expected": "21 6",
+      "actual": "21 6",
+      "diagnostics": ""
+    },
+    {
+      "id": "Q055",
+      "language": "c",
+      "passed": true,
+      "expected": "66 4",
+      "actual": "66 4",
+      "diagnostics": ""
+    },
+    {
+      "id": "Q056",
+      "language": "c",
+      "passed": true,
+      "expected": "136 5",
+      "actual": "136 5",
+      "diagnostics": ""
+    },
+    {
+      "id": "Q057",
+      "language": "c",
+      "passed": true,
+      "expected": "1 1",
+      "actual": "1 1",
+      "diagnostics": ""
+    },
+    {
+      "id": "Q058",
+      "language": "c",
+      "passed": true,
+      "expected": "0",
+      "actual": "0",
+      "diagnostics": ""
+    },
+    {
+      "id": "Q059",
+      "language": "c",
+      "passed": true,
+      "expected": "1A",
+      "actual": "1A",
+      "diagnostics": ""
+    },
+    {
+      "id": "Q060",
+      "language": "c",
+      "passed": true,
+      "expected": "10201",
+      "actual": "10201",
+      "diagnostics": ""
+    },
+    {
+      "id": "Q061",
+      "language": "c",
+      "passed": true,
+      "expected": "321",
+      "actual": "321",
+      "diagnostics": ""
+    },
+    {
+      "id": "Q062",
+      "language": "c",
+      "passed": true,
+      "expected": "2001",
+      "actual": "2001",
+      "diagnostics": ""
+    },
+    {
+      "id": "Q063",
+      "language": "c",
+      "passed": true,
+      "expected": "11 101",
+      "actual": "11 101",
+      "diagnostics": ""
+    },
+    {
+      "id": "Q064",
+      "language": "c",
+      "passed": true,
+      "expected": "*|**|***|",
+      "actual": "*|**|***|",
+      "diagnostics": ""
+    },
+    {
+      "id": "Q065",
+      "language": "c",
+      "passed": true,
+      "expected": "15",
+      "actual": "15",
+      "diagnostics": ""
+    },
+    {
+      "id": "Q066",
+      "language": "c",
+      "passed": true,
+      "expected": "70",
+      "actual": "70",
+      "diagnostics": ""
+    },
+    {
+      "id": "Q067",
+      "language": "c",
+      "passed": true,
+      "expected": "252",
+      "actual": "252",
+      "diagnostics": ""
+    },
+    {
+      "id": "Q068",
+      "language": "c",
+      "passed": true,
+      "expected": "3",
+      "actual": "3",
+      "diagnostics": ""
+    },
+    {
+      "id": "Q069",
+      "language": "c",
+      "passed": true,
+      "expected": "7",
+      "actual": "7",
+      "diagnostics": ""
+    },
+    {
+      "id": "Q070",
+      "language": "c",
+      "passed": true,
+      "expected": "0",
+      "actual": "0",
+      "diagnostics": ""
+    },
+    {
+      "id": "Q071",
+      "language": "c",
+      "passed": true,
+      "expected": "6",
+      "actual": "6",
+      "diagnostics": ""
+    },
+    {
+      "id": "Q072",
+      "language": "c",
+      "passed": true,
+      "expected": "0",
+      "actual": "0",
+      "diagnostics": ""
+    },
+    {
+      "id": "Q073",
+      "language": "c",
+      "passed": true,
+      "expected": "--01-1-01",
+      "actual": "--01-1-01",
+      "diagnostics": ""
+    },
+    {
+      "id": "Q074",
+      "language": "c",
+      "passed": true,
+      "expected": "0",
+      "actual": "0",
+      "diagnostics": ""
+    },
+    {
+      "id": "Q075",
+      "language": "c",
+      "passed": true,
+      "expected": "1101 5",
+      "actual": "1101 5",
+      "diagnostics": ""
+    },
+    {
+      "id": "Q076",
+      "language": "c",
+      "passed": true,
+      "expected": "7",
+      "actual": "7",
+      "diagnostics": ""
+    },
+    {
+      "id": "Q077",
+      "language": "c",
+      "passed": true,
+      "expected": "7",
+      "actual": "7",
+      "diagnostics": ""
+    },
+    {
+      "id": "Q078",
+      "language": "c",
+      "passed": true,
+      "expected": "8 15",
+      "actual": "8 15",
+      "diagnostics": ""
+    },
+    {
+      "id": "Q079",
+      "language": "c",
+      "passed": true,
+      "expected": "8 9",
+      "actual": "8 9",
+      "diagnostics": ""
+    },
+    {
+      "id": "Q080",
+      "language": "c",
+      "passed": true,
+      "expected": "4",
+      "actual": "4",
+      "diagnostics": ""
+    },
+    {
+      "id": "Q081",
+      "language": "c",
+      "passed": true,
+      "expected": "2",
+      "actual": "2",
+      "diagnostics": ""
+    },
+    {
+      "id": "Q082",
+      "language": "cpp",
+      "passed": true,
+      "expected": "2",
+      "actual": "2",
+      "diagnostics": ""
+    },
+    {
+      "id": "Q083",
+      "language": "cpp",
+      "passed": true,
+      "expected": "-1",
+      "actual": "-1",
+      "diagnostics": ""
+    },
+    {
+      "id": "Q084",
+      "language": "cpp",
+      "passed": true,
+      "expected": "0",
+      "actual": "0",
+      "diagnostics": ""
+    },
+    {
+      "id": "Q143",
+      "language": "cpp",
+      "passed": true,
+      "expected": "2 2 5",
+      "actual": "2 2 5",
+      "diagnostics": ""
+    },
+    {
+      "id": "Q144",
+      "language": "c",
+      "passed": true,
+      "expected": "2 2",
+      "actual": "2 2",
+      "diagnostics": ""
+    },
+    {
+      "id": "Q145",
+      "language": "c",
+      "passed": true,
+      "expected": "171",
+      "actual": "171",
+      "diagnostics": ""
+    },
+    {
+      "id": "Q146",
+      "language": "c",
+      "passed": true,
+      "expected": "252 210",
+      "actual": "252 210",
+      "diagnostics": ""
+    },
+    {
+      "id": "Q147",
+      "language": "c",
+      "passed": true,
+      "expected": "3 4",
+      "actual": "3 4",
+      "diagnostics": ""
+    },
+    {
+      "id": "Q148",
+      "language": "c",
+      "passed": true,
+      "expected": "10",
+      "actual": "10",
+      "diagnostics": ""
+    }
+  ],
+  "independentChecks": {
+    "tiling": "board enumeration n=1..8 and split identities n=2..12 passed",
+    "partition": "all n,k=0..9 compared against nonincreasing partition enumeration",
+    "encoding": "278 binary strings of lengths 1,2,4,8 round-trip passed",
+    "node-distance": "1521 node pairs checked against ancestor-set method",
+    "sum": "halving identity n=1..1000 compared with arithmetic sum",
+    "counterexamples": "reverse-width, integer division, greedy jumps, forward DP overwrite and diamond duplicate enqueue reproduced"
+  },
+  "rubricQuestions": 60,
+  "limitation": "서술형의 의미·동치성은 자동 채점하지 않음. 모범 답안과 검토된 기준으로 자기 채점."
+}

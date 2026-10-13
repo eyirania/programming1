@@ -1,0 +1,110 @@
+[
+  {
+    "id": "err-1",
+    "sourceId": "reference",
+    "page": 2,
+    "title": "lower_bound / upper_bound 뒤바뀜",
+    "original": "첫 문장의 두 함수 설명이 뒤바뀜.",
+    "corrected": "선형 슬라이드 p.7 및 C++ 표준 초안에 따라 lower >=, upper >로 정정. 표의 설명은 이미 올바름.",
+    "reference": "https://eel.is/c++draft/alg.binary.search"
+  },
+  {
+    "id": "err-2",
+    "sourceId": "reference",
+    "page": 1,
+    "title": "주소 출력 형식",
+    "original": "포인터를 %d로 출력하며 특정 주소값을 예시로 제시.",
+    "corrected": "%p와 (void*)로 출력. 수치 주소 자체는 고정 정답으로 사용하지 않음.",
+    "reference": ""
+  },
+  {
+    "id": "err-3",
+    "sourceId": "linear",
+    "page": 7,
+    "title": "경계 탐색 코드의 초기값",
+    "original": "result의 선언과 실패 시 초기값이 생략된 학습용 코드.",
+    "corrected": "앱의 완성 패턴은 result=n으로 초기화. 원본 코드는 암기용 부분 코드로 취급.",
+    "reference": ""
+  },
+  {
+    "id": "err-4",
+    "sourceId": "relation-1",
+    "page": 6,
+    "title": "시간 측정 자료형·범위",
+    "original": "clock() 결과를 time_t에 저장. int 최대 입력에서 i++도 넘칠 수 있음.",
+    "corrected": "실행 예시는 clock_t 사용 및 64비트 반복 변수. clock은 CPU 시간으로 벽시계 시간과 구별.",
+    "reference": ""
+  },
+  {
+    "id": "err-5",
+    "sourceId": "relation-2",
+    "page": 5,
+    "title": "의도적으로 제시된 숫자 뒤집기 오류",
+    "original": "내부 수의 선행 0이 사라지는 전략 #3.",
+    "corrected": "1010에서 101 대신 11. 자리 폭 상태 또는 반복 누적으로 수정. 오류 찾기 과제로 보존.",
+    "reference": ""
+  },
+  {
+    "id": "err-6",
+    "sourceId": "relation-3",
+    "page": 12,
+    "title": "타일 입력 조건 충돌",
+    "original": "문제 p.8의 m<=40000과 비교 실습 m=99999가 다름.",
+    "corrected": "기본 문제 범위와 별도 성능 비교 실습을 구분. 앱 문제마다 m 명시.",
+    "reference": ""
+  },
+  {
+    "id": "err-7",
+    "sourceId": "relation-4",
+    "page": 1,
+    "title": "파일명과 표제 번호",
+    "original": "chap4.pdf 표제는 Chap #5. chap6.pdf는 Chap #9.",
+    "corrected": "파일명과 원본 표제를 각각 보존하고 임의로 번호를 맞추지 않음.",
+    "reference": ""
+  },
+  {
+    "id": "err-8",
+    "sourceId": "relation-4",
+    "page": 3,
+    "title": "완전이진트리 정의",
+    "original": "마지막 층 이외 노드는 자식 둘이라는 설명은 표준 complete 정의보다 강함.",
+    "corrected": "표준은 마지막 층 이전은 가득 차고 마지막 층은 왼쪽부터 채움. 거리 문제는 부모 x/2 번호 규칙에 의존.",
+    "reference": ""
+  },
+  {
+    "id": "err-9",
+    "sourceId": "relation-4",
+    "page": 8,
+    "title": "색별 반환 패턴의 빠진 기초 경우",
+    "original": "다른 색 단일 칸에서 0 반환이 생략됨.",
+    "corrected": "단색이면 원하는 색인지에 따라 1/0 반환 후 종료. n=0 분할 방지.",
+    "reference": ""
+  },
+  {
+    "id": "err-10",
+    "sourceId": "relation-5",
+    "page": 3,
+    "title": "정수 분할 전개식 오타",
+    "original": "f(n-2,2) 항이 연속으로 두 번 등장.",
+    "corrected": "합은 Σ(i=1..min(n,k)) P(n-i,i). 두 갈래 식과 일치하도록 정정. p.6에도 같은 오타.",
+    "reference": ""
+  },
+  {
+    "id": "err-11",
+    "sourceId": "relation-5",
+    "page": 11,
+    "title": "상향식 예시의 진행 방향",
+    "original": "k+f(k+1) 재귀 예시를 상향식으로 제시.",
+    "corrected": "원본 분류는 보존하되 호출 순서와 실제 반환·계산 순서를 별도 설명.",
+    "reference": ""
+  },
+  {
+    "id": "err-12",
+    "sourceId": "graph",
+    "page": 6,
+    "title": "깊이·높이 영문 표기",
+    "original": "깊이=Level, 높이=Depth로 표기.",
+    "corrected": "일반 용어 depth=루트부터 거리, height=하위 최장 거리. 시험에서는 간선 수 기준을 명시.",
+    "reference": ""
+  }
+]
